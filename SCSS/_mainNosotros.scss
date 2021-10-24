@@ -1,0 +1,31 @@
+@import "mixins";
+@import "variables";
+
+body{
+    main{
+        section{
+            h1{
+                @include headings(0px,$fuenteHeadings,30px,200);
+            }
+            .principal{
+                p{
+                    @include parrafo (20px);
+                }
+            }
+        }
+        .valores{
+            .row{
+                .div-valores{
+                    @include divEnLinea(24rem);
+                    h2{
+                        @include headings(0px,$fuenteHeadings,20px,600);
+                    }
+                    p{
+                        @include parrafo(18px)
+                    }
+                    margin:20px auto;
+                }
+            }
+        }
+    }
+}

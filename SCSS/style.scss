@@ -1,0 +1,120 @@
+@import"variables";
+@import"header";
+@import"mainIndex";
+@import"footer";
+@import"mainNosotros";
+@import"mainNovedades";
+
+@import "mainContacto";
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    //border:1px solid black;
+    }
+body{
+    color: #444;
+    font-family:'Open Sans', sans-serif;
+    background-color: white;
+    .cards{
+        .container{
+            .carousel{
+                .active{
+                    .card{
+                        .card-img-top{
+                            width:20px;
+                            margin: 10px auto;
+                            transition: 1s;
+                            &:hover{
+                                transform: scale(1.2);
+                            }
+                        }
+                        .card-body{
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            align-items: center;
+                            border: 1px solid #ccc;
+                            margin: 10px;
+                            h5{
+                                font: {
+                                    size:20px;
+                                    family:'Open Sans', sans-serif;
+                                    weight:bold;
+                                }
+                                text-align: center;
+                            }
+                            p{
+                                padding:1rem 1.2rem;
+                                margin: 0 auto;
+                                line-height: 1.8rem;
+                                font: {
+                                    family:$fuenteParrafo;
+                                    size:1.1rem;
+                                }
+                                text-align: center; 
+                            }
+                        }
+                        
+    
+                    }
+                }
+            }
+    
+    
+        }
+    }
+}
+
+//estilos carousel productos
+
+
+
+//RESPONSIVE    
+
+@media screen and (max-width:425px) and (min-width:320px) {
+body{
+    header{
+        align-items: flex-start;
+        flex-wrap: nowrap;
+        height: 50px;
+        nav{
+            margin-right: 20px;
+        }
+        }
+    .main{
+        .marcas{
+            .carousel{
+                .carousel-item{
+                    img{
+                        width:100%;
+                    }
+                }
+            }
+        }
+        .contactanos{
+            .row{
+                .contact-form{
+                    .contact-form__div{
+                        .contact-form__input--activo{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+        .footer{
+            .row{
+                .contain{
+                    margin:20px auto;
+                }
+            }
+        }
+    }    
+}
+
+}

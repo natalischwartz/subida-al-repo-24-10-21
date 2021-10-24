@@ -1,0 +1,68 @@
+@import "mixins";
+@import"variables";
+
+body{
+    main{
+        section{
+            h2{
+                @include headings(0px,$fuenteHeadings,25px,900);
+            }
+        }
+        .seccionVerde{
+            @include seccionVerde;
+            .divEnLinea{
+                @include divEnLinea(20rem);
+                .anim{
+                    @include headings(0px,$fuenteHeadings,20px,600);
+                    animation-name: mianim;
+                    animation-duration: 4s;
+                    animation-delay: 1s;
+                    position: relative;
+                    animation-timing-function: ease;
+                    animation-iteration-count: 2;
+                    @keyframes mianim {
+                        0% {left:0px;top:0px}
+                        25% {left:10px;top:0px;}
+                        50% {left:10px;top:10px;}
+                        75% {left:0px;top:10px;}
+                        100% {left: 0px; top:0px;} 
+                        
+                    }
+                }
+                h4{
+                    @include headings(0px,$fuenteHeadings,14px,500);
+                }
+            }
+        }
+        section {
+            .formulario{
+                width: 70%;
+                margin: 50px auto;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: center;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    padding:10px;
+                    input{
+                        margin-bottom: 20px;
+                        transition: all 0.4s;
+                        &:focus{
+                            background:lightgrey;
+                            padding: 10px;
+                        }
+                    }
+                }
+                .submit{
+                    input{
+                        @include estiloBotones(110px);
+                        margin: 20px auto;
+                    }
+                }
+            }
+        }
+    }
+}

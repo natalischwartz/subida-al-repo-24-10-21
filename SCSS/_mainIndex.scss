@@ -1,0 +1,131 @@
+@import "mixins";
+@import"variables";
+
+.main{
+    .telas{
+        .portada{
+            height: 100%;
+            text-align:center;
+            img{
+                width:40%;
+            }
+        }
+    }
+    .servicios{
+        .container-fluid{
+            .seccionVerde{
+                @include seccionVerde;
+                .divEnLinea{
+                    @include divEnLinea(24rem);
+                    i{
+                        font-size: 25px;
+                        padding: 15px 0;
+                        color: white;  
+                    }
+                    h3{
+                        @include headings(0px,$fuenteHeadings,20px,800);
+                    }
+
+                }
+
+            }
+        }
+    }
+    .productos{
+        h2{
+            @include headings(3px,$fuenteHeadings,25px,900);
+        }
+        .row{
+            div{
+                img{
+                    width:12rem;
+                    height:12rem;
+                    border-radius: 1.2rem;
+                    object-fit: cover;
+                    &:hover{
+                        opacity:0.6;
+                    }
+                }
+            }
+        }
+    }
+    .marcas{
+        h2{
+            @include headings(3px,$fuenteHeadings,25px,900);
+        }
+        .carousel{
+            width:100%;
+            margin-bottom:30px;
+            .carousel-indicators{
+                margin-bottom:-2rem;
+                button{
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background: #ccc;
+                    border: 1px solid #ccc;
+                    margin-bottom: 10px;
+                }
+            }
+            .carousel-inner{
+                .carousel-item{
+                    img{
+                        max-width: 100%;
+                        
+                    }
+                }
+            }
+        }
+    }
+    .contactanos{
+        h2{
+            @include headings(3px,$fuenteHeadings, 25px, 900);
+        }
+        iframe{
+            width: 100%;
+            height:312px;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            .contacto{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                p{
+                    font: size 14px;
+                    color: #888;
+                    font-weight: 200;
+                    font-family: $fuenteParrafo;
+                    margin-left:5px;
+                }
+                i{
+                    font-size: 25px;
+                    color: #007bff;
+                    
+                }
+            }
+        }        
+        .contact-form {
+            .contactForm{
+                .form{
+                    .contact-form__div{
+                        margin:10px auto;
+                        .contact-form__input,.contact-form__textarea{
+                            &:focus{
+                                transition: 0.4s;
+                                padding: 8px 0px 5px;
+                                background:lightgrey;
+                            }
+                        }
+                        .contact-form__input--activo{
+                            @include estiloBotones(100px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 

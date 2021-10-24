@@ -1,0 +1,70 @@
+@import "mixins";
+@import"variables";
+
+.footer{
+    .seccionVerde{
+        @include seccionVerde;
+        .divEnLinea{
+            @include divEnLinea(24rem);
+            img{
+                width: 30%;
+                margin: 5px auto; 
+            }
+            p{
+                @include parrafo(14px)
+            }
+            h4{
+                @include headings(0px,$fuenteHeadings,14px,600);
+            }
+
+            h5{
+                @include headings(0px,$fuenteParrafo,15px,200);    
+            }
+            i{
+                color: white;
+                margin-bottom: 10px; 
+            }
+            
+        }
+        .cajaWhatsapp{
+            width: 40px;
+            height: 40px;
+            position: fixed;
+            bottom: 90px;
+            right: 33px;
+            a{
+                img{
+                    width: 40px;;
+                }
+            }
+            
+        }
+        .contain{
+            text-align: center;
+            h5{
+                @include headings(0px,$fuenteParrafo,15px,100);
+            }
+    
+        }
+        div{
+            .backToTop{
+                background-color:$colorSecundario;
+                color: white;
+                width: 44px;
+                height: 44px;
+                text-align: center;
+                font-size: 16px;
+                line-height: 1;
+                border-radius: 50%;
+                position: fixed;
+                right: 15px;
+                bottom: 15px;
+                i{
+                    padding-top: 12px;
+                    color: #fff;  
+                }
+            }
+        }
+    }
+
+}

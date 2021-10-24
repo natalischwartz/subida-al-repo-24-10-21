@@ -1,0 +1,62 @@
+@mixin seccionVerde {
+    height: 100%;
+    background-color:$colorPrincipal;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    
+}
+
+@mixin divEnLinea ($ancho){ 
+    width: $ancho;
+    height:auto;
+    margin:50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin headings ($letterSpacing,$fontFamily,$fontSize,$fontWeight){
+    text-align: center;
+    font-family: $fontFamily;
+    margin: 20px 0 10px 0;
+    padding: 0;
+    font: {
+        size:$fontSize;
+        weight:$fontWeight;
+    }
+    letter-spacing:$letterSpacing;
+}    
+
+@mixin parrafo($fontSize) {
+    padding:1rem 1.2rem;
+    margin: 0 auto;
+    line-height: 1.8rem;
+    font: {
+        family:'PT Serif', serif;
+        size:$fontSize; 
+    }
+    text-align: center;
+}
+
+@mixin estiloBotones ($width){
+    background: $colorSecundario;
+    width:$width;
+    color: white;
+    font-weight: 300;
+    border: 2.5px solid white;
+    text-transform:uppercase;
+    text-align: center;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 85%;
+    letter-spacing: 1.5px;
+    font-family: Arial;
+    cursor:pointer;
+    &:hover{
+    background-color: $colorPrincipal;
+    color:white;
+    }
+}    
