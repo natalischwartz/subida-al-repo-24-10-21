@@ -30,7 +30,11 @@ body{
                     }
                 }
                 h4{
-                    @include headings(0px,$fuenteHeadings,14px,500);
+                    @include headings (0px,$fuenteHeadings,18px,500);
+                }
+                a{
+                    text-decoration: none;
+                    color:white;
                 }
             }
         }

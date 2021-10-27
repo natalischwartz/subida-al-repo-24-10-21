@@ -1,64 +1,44 @@
 header {
-  height: 80px;
-  padding: 1rem 0px;
   background-color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); }
-  header a .logo {
-    width: 40%;
-    margin-left: 30px; }
-  header nav {
-    margin-right: 30px; }
-    header nav .menu {
-      list-style-type: none;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
-      header nav .menu .nav-item {
-        position: relative;
-        display: inline-block;
-        margin: 0px 10px;
-        justify-content: center; }
-        header nav .menu .nav-item:hover .oculto {
-          visibility: visible;
-          opacity: 1; }
-        header nav .menu .nav-item .nav-link {
-          display: block;
-          text-decoration: none;
-          height: 100%;
-          color: black;
-          font-size: 15px;
-          font-weight: bold; }
-          header nav .menu .nav-item .nav-link:hover {
-            color: #57A167;
-            transition: all .3s; }
-        header nav .menu .nav-item .oculto {
-          position: absolute;
-          background-color: white;
-          padding: 10px 0px;
-          border-radius: 0 0 15px 15px;
-          visibility: hidden;
-          opacity: 0;
-          transition: opacity 1.5s;
-          list-style-type: none; }
-          header nav .menu .nav-item .oculto li .nav-link {
-            display: block;
-            color: black;
-            font-size: 14px;
-            text-decoration: none; }
-      header nav .menu li a i {
+  header .container-fluid .navbar a .logo {
+    width: 50%; }
+  header .container-fluid .navbar .collapse .navbar-nav .nav-item {
+    justify-content: center; }
+    header .container-fluid .navbar .collapse .navbar-nav .nav-item:hover .oculto {
+      visibility: visible;
+      opacity: 1; }
+    header .container-fluid .navbar .collapse .navbar-nav .nav-item .nav-link {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+      font-weight: bold; }
+      header .container-fluid .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+        color: #57A167;
+        transition: all .3s; }
+    header .container-fluid .navbar .collapse .navbar-nav .nav-item .oculto {
+      position: absolute;
+      background-color: white;
+      padding: 10px 0px;
+      border-radius: 0 0 15px 15px;
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 1.5s;
+      list-style-type: none; }
+      header .container-fluid .navbar .collapse .navbar-nav .nav-item .oculto li .nav-link {
+        display: block;
         color: black;
-        font-size: 15px;
-        justify-content: center; }
-        header nav .menu li a i:hover {
-          color: #57A167; }
+        font-size: 14px;
+        text-decoration: none; }
+  header .container-fluid .navbar .collapse .navbar-nav li a i {
+    color: black;
+    font-size: 20px;
+    justify-content: center; }
+    header .container-fluid .navbar .collapse .navbar-nav li a i:hover {
+      color: #57A167; }
 
 .main .telas .portada {
-  height: 100%;
+  width: 100%;
   text-align: center; }
   .main .telas .portada img {
     width: 40%; }
@@ -74,7 +54,7 @@ header {
   .main .servicios .container-fluid .seccionVerde .divEnLinea {
     width: 24rem;
     height: auto;
-    margin: 50px 0;
+    margin: 20px auto;
     text-align: center;
     display: flex;
     flex-direction: column; }
@@ -199,7 +179,7 @@ header {
   .footer .seccionVerde .divEnLinea {
     width: 24rem;
     height: auto;
-    margin: 50px 0;
+    margin: 20px auto;
     text-align: center;
     display: flex;
     flex-direction: column; }
@@ -261,7 +241,10 @@ header {
     border-radius: 50%;
     position: fixed;
     right: 15px;
-    bottom: 15px; }
+    bottom: 15px;
+    transition: all 0.5s; }
+    .footer .seccionVerde div .backToTop:hover {
+      opacity: 0.7; }
     .footer .seccionVerde div .backToTop i {
       padding-top: 12px;
       color: #fff; }
@@ -286,7 +269,7 @@ body main section .principal p {
 body main .valores .row .div-valores {
   width: 24rem;
   height: auto;
-  margin: 50px 0;
+  margin: 20px auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -349,7 +332,7 @@ body main .seccionVerde {
   body main .seccionVerde .divEnLinea {
     width: 20rem;
     height: auto;
-    margin: 50px 0;
+    margin: 20px auto;
     text-align: center;
     display: flex;
     flex-direction: column; }
@@ -389,9 +372,12 @@ body main .seccionVerde {
       font-family: "Open Sans", sans-serif;
       margin: 20px 0 10px 0;
       padding: 0;
-      font-size: 14px;
+      font-size: 18px;
       font-weight: 500;
       letter-spacing: 0px; }
+    body main .seccionVerde .divEnLinea a {
+      text-decoration: none;
+      color: white; }
 
 body main section .formulario {
   width: 70%;
@@ -433,7 +419,8 @@ body main section .formulario {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 1px solid black; }
 
 body {
   color: #444;
@@ -454,7 +441,6 @@ body {
     border: 1px solid #ccc;
     margin: 10px; }
     body .cards .container .carousel .active .card .card-body h5 {
-      font-size: 20px;
       font-family: 'Open Sans', sans-serif;
       font-weight: bold;
       text-align: center; }
@@ -466,16 +452,12 @@ body {
       font-size: 1.1rem;
       text-align: center; }
 
-@media screen and (max-width: 425px) and (min-width: 320px) {
-  body header {
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    height: 50px; }
-    body header nav {
-      margin-right: 20px; }
-  body .main .marcas .carousel .carousel-item img {
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  body header .navbar-nav {
+    margin-right: 5px; }
+  .main .marcas .carousel .carousel-item img {
     width: 100%; }
-  body .main .contactanos .row .contact-form .contact-form__div .contact-form__input--activo {
+  .main .contactanos .row .contact-form .contact-form__div .contact-form__input--activo {
     width: 90%; }
-  body .main .footer .row .contain {
+  .main .footer .row .contain {
     margin: 20px auto; } }

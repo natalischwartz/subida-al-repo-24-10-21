@@ -1,85 +1,68 @@
 header{
-    height: 80px;
-    padding: 1rem 0px;
-    background-color: white;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content:space-between;
-    align-items: center;
-    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
-    a{
-        .logo{
-            width:40%;
-            margin-left:30px;
-        }
-    }
-    nav{
-        margin-right:30px;
-        .menu{
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            //margin: 20px auto;
-            .nav-item{
-                position: relative;
-                display: inline-block;
-                margin: 0px 10px;
-                justify-content: center;
-                &:hover{
-                    .oculto{
-                        visibility: visible;
-                        opacity: 1;
-                    }
+        background-color: white;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+    .container-fluid{
+        .navbar{
+            a{
+                .logo{
+                    width:50%;
                 }
-                .nav-link{
-                    display: block;
-                    text-decoration: none;
-                    height:100%;
-                    color:black;
-                    font: {
-                        size: 15px;
-                        weight: bold;
-                    }
-                    &:hover{
-                        color:$colorPrincipal;
-                        transition: all .3s;
-                    }
-                }
-                .oculto{
-                    position: absolute;
-                    background-color: white;
-                    padding:10px 0px;
-                    border-radius: 0 0 15px 15px;
-                    visibility:hidden;
-                    opacity: 0;
-                    transition: opacity 1.5s;
-                    list-style-type: none;
-                    li{
+            }
+            .collapse{
+                .navbar-nav{
+                    .nav-item{
+                        justify-content: center;
+                        &:hover{
+                            .oculto{
+                                visibility: visible;
+                                opacity: 1;
+                            }
+                        }
                         .nav-link{
-                            display: block;
-                            color: black;
-                            font-size: 14px;
                             text-decoration: none;
+                            color:black;
+                            font: {
+                                size: 15px;
+                                weight: bold;
+                            }
+                            &:hover{
+                                color:$colorPrincipal;
+                                transition: all .3s;
+                            }
+                        }
+                        .oculto{
+                            position: absolute;
+                            background-color: white;
+                            padding:10px 0px;
+                            border-radius: 0 0 15px 15px;
+                            visibility:hidden;
+                            opacity: 0;
+                            transition: opacity 1.5s;
+                            list-style-type: none;
+                            li{
+                                .nav-link{
+                                    display: block;
+                                    color: black;
+                                    font-size: 14px;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                    li{
+                        a{
+                            i{
+                                color:black;
+                                    font-size: 20px;
+                                    justify-content: center;
+                                    &:hover{
+                                    color:$colorPrincipal;
+                                }
+                            }
                         }
                     }
                 }
             }
-            li{
-                a{
-                    i{
-                        color:black;
-                        font-size: 15px;
-                        justify-content: center;
-                        &:hover{
-                            color:$colorPrincipal;
-                        } 
-                    }
-                }
-            }
         }
     }
-
-    
 }
