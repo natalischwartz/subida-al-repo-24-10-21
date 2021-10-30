@@ -40,12 +40,15 @@ body{
         }
         section {
             .formulario{
-                width: 70%;
-                margin: 50px auto;
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: center;
+                @media screen and (max-width:600px) and (min-width:320px){
+                    width: 100%;
+                    margin-top: 40px;
+                }
+                @media (min-width:768px){
+                    width:50%;
+                }
+                width: 50%;
+                margin-top: 40px;
                 div{
                     display: flex;
                     flex-direction: column;
@@ -62,6 +65,9 @@ body{
                 }
                 .submit{
                     input{
+                        @media screen and (max-width:600px) and (min-width:320px){
+                            width: 100%;
+                        }
                         @include estiloBotones(110px);
                         margin: 20px auto;
                     }

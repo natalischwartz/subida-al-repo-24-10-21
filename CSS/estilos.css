@@ -3,39 +3,44 @@ header {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); }
   header .container-fluid .navbar a .logo {
     width: 50%; }
-  header .container-fluid .navbar .collapse .navbar-nav .nav-item {
-    justify-content: center; }
-    header .container-fluid .navbar .collapse .navbar-nav .nav-item:hover .oculto {
-      visibility: visible;
-      opacity: 1; }
-    header .container-fluid .navbar .collapse .navbar-nav .nav-item .nav-link {
-      text-decoration: none;
-      color: black;
-      font-size: 15px;
-      font-weight: bold; }
-      header .container-fluid .navbar .collapse .navbar-nav .nav-item .nav-link:hover {
-        color: #57A167;
-        transition: all .3s; }
-    header .container-fluid .navbar .collapse .navbar-nav .nav-item .oculto {
-      position: absolute;
-      background-color: white;
-      padding: 10px 0px;
-      border-radius: 0 0 15px 15px;
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity 1.5s;
-      list-style-type: none; }
-      header .container-fluid .navbar .collapse .navbar-nav .nav-item .oculto li .nav-link {
-        display: block;
+  header .container-fluid .navbar .collapse .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    header .container-fluid .navbar .collapse .menu .nav-item {
+      justify-content: center; }
+      header .container-fluid .navbar .collapse .menu .nav-item:hover .oculto {
+        visibility: visible;
+        opacity: 1; }
+      header .container-fluid .navbar .collapse .menu .nav-item .nav-link {
+        text-decoration: none;
         color: black;
-        font-size: 14px;
-        text-decoration: none; }
-  header .container-fluid .navbar .collapse .navbar-nav li a i {
-    color: black;
-    font-size: 20px;
-    justify-content: center; }
-    header .container-fluid .navbar .collapse .navbar-nav li a i:hover {
-      color: #57A167; }
+        font-size: 15px;
+        font-weight: bold; }
+        header .container-fluid .navbar .collapse .menu .nav-item .nav-link:hover {
+          color: #57A167;
+          transition: all .3s; }
+      header .container-fluid .navbar .collapse .menu .nav-item .oculto {
+        position: absolute;
+        background-color: white;
+        padding: 10px 0px;
+        border-radius: 0 0 15px 15px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity 1.5s;
+        list-style-type: none; }
+        header .container-fluid .navbar .collapse .menu .nav-item .oculto li .nav-link {
+          display: block;
+          color: black;
+          font-size: 14px;
+          text-decoration: none; }
+    header .container-fluid .navbar .collapse .menu li a i {
+      color: black;
+      font-size: 20px;
+      justify-content: center; }
+      header .container-fluid .navbar .collapse .menu li a i:hover {
+        color: #57A167; }
 
 .main .telas .portada {
   width: 100%;
@@ -88,7 +93,13 @@ header {
   .main .productos .row div img:hover {
     opacity: 0.6; }
 
-.main .marcas h2 {
+.main .productos .row .articulo-info {
+  text-align: center; }
+  .main .productos .row .articulo-info a {
+    text-decoration: none;
+    font-size: 20px; }
+
+.marcas h2 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   margin: 20px 0 10px 0;
@@ -97,22 +108,22 @@ header {
   font-weight: 900;
   letter-spacing: 3px; }
 
-.main .marcas .carousel {
+.marcas .carousel {
   width: 100%;
   margin-bottom: 30px; }
-  .main .marcas .carousel .carousel-indicators {
+  .marcas .carousel .carousel-indicators {
     margin-bottom: -2rem; }
-    .main .marcas .carousel .carousel-indicators button {
+    .marcas .carousel .carousel-indicators button {
       width: 10px;
       height: 10px;
       border-radius: 50%;
       background: #ccc;
       border: 1px solid #ccc;
       margin-bottom: 10px; }
-  .main .marcas .carousel .carousel-inner .carousel-item img {
-    max-width: 100%; }
+  .marcas .carousel .carousel-inner .carousel-item img {
+    height: 20vh; }
 
-.main .contactanos h2 {
+.contactanos h2 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   margin: 20px 0 10px 0;
@@ -121,36 +132,36 @@ header {
   font-weight: 900;
   letter-spacing: 3px; }
 
-.main .contactanos iframe {
+.contactanos iframe {
   width: 100%;
   height: 312px; }
 
-.main .contactanos .row {
+.contactanos .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start; }
-  .main .contactanos .row .contacto {
+  .contactanos .row .contacto {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; }
-    .main .contactanos .row .contacto p {
+    .contactanos .row .contacto p {
       font: size 14px;
       color: #888;
       font-weight: 200;
       font-family: "PT Serif", serif;
       margin-left: 5px; }
-    .main .contactanos .row .contacto i {
+    .contactanos .row .contacto i {
       font-size: 25px;
       color: #007bff; }
 
-.main .contactanos .contact-form .contactForm .form .contact-form__div {
+.contactanos .contact-form .contactForm .form .contact-form__div {
   margin: 10px auto; }
-  .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input:focus, .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__textarea:focus {
+  .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input:focus, .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__textarea:focus {
     transition: 0.4s;
     padding: 8px 0px 5px;
     background: lightgrey; }
-  .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
+  .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
     background: #78e08f;
     width: 100px;
     color: white;
@@ -164,9 +175,12 @@ header {
     letter-spacing: 1.5px;
     font-family: Arial;
     cursor: pointer; }
-    .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo:hover {
+    .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo:hover {
       background-color: #57A167;
       color: white; }
+    @media screen and (max-width: 600px) and (min-width: 320px) {
+      .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
+        width: 90%; } }
 
 .footer .seccionVerde {
   height: 100%;
@@ -290,27 +304,23 @@ body main .valores .row .div-valores {
     font-size: 18px;
     text-align: center; }
 
-.nuevaColeccion {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: center; }
-  .nuevaColeccion .caja2 {
-    background-color: #131212;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    .nuevaColeccion .caja2 h3 {
-      margin: 30px auto;
-      padding: 20px; }
-    .nuevaColeccion .caja2 a {
-      font-family: 'Open Sans', sans-serif;
-      text-transform: uppercase;
-      text-align: center;
-      text-decoration: none;
-      color: white; }
+.container .row div div img {
+  object-fit: cover;
+  width: auto; }
+
+.container .row div .caja2 {
+  background-color: #131212;
+  color: white;
+  height: 50vh; }
+  .container .row div .caja2 h3 {
+    margin: 30px auto;
+    padding: 20px; }
+  .container .row div .caja2 a {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: white; }
 
 body main section h2 {
   text-align: center;
@@ -380,12 +390,15 @@ body main .seccionVerde {
       color: white; }
 
 body main section .formulario {
-  width: 70%;
-  margin: 50px auto;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center; }
+  width: 50%;
+  margin-top: 40px; }
+  @media screen and (max-width: 600px) and (min-width: 320px) {
+    body main section .formulario {
+      width: 100%;
+      margin-top: 40px; } }
+  @media (min-width: 768px) {
+    body main section .formulario {
+      width: 50%; } }
   body main section .formulario div {
     display: flex;
     flex-direction: column;
@@ -412,6 +425,9 @@ body main section .formulario {
     font-family: Arial;
     cursor: pointer;
     margin: 20px auto; }
+    @media screen and (max-width: 600px) and (min-width: 320px) {
+      body main section .formulario .submit input {
+        width: 100%; } }
     body main section .formulario .submit input:hover {
       background-color: #57A167;
       color: white; }
@@ -419,44 +435,48 @@ body main section .formulario {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  border: 1px solid black; }
 
 body {
   color: #444;
   font-family: 'Open Sans', sans-serif;
   background-color: white; }
-  body .cards .container .carousel .active .card .card-img-top {
-    width: 20px;
-    margin: 10px auto;
-    transition: 1s; }
-    body .cards .container .carousel .active .card .card-img-top:hover {
-      transform: scale(1.2); }
-  body .cards .container .carousel .active .card .card-body {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #ccc;
-    margin: 10px; }
-    body .cards .container .carousel .active .card .card-body h5 {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: bold;
-      text-align: center; }
-    body .cards .container .carousel .active .card .card-body p {
-      padding: 1rem 1.2rem;
-      margin: 0 auto;
-      line-height: 1.8rem;
-      font-family: "PT Serif", serif;
-      font-size: 1.1rem;
-      text-align: center; }
-
-@media screen and (max-width: 600px) and (min-width: 320px) {
-  body header .navbar-nav {
-    margin-right: 5px; }
-  .main .marcas .carousel .carousel-item img {
+  body .imagenes .carouseles .carousel .carousel-inner {
     width: 100%; }
-  .main .contactanos .row .contact-form .contact-form__div .contact-form__input--activo {
-    width: 90%; }
-  .main .footer .row .contain {
-    margin: 20px auto; } }
+    body .imagenes .carouseles .carousel .carousel-inner .container .row div .carousel-item {
+      height: 100vh;
+      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+      border: 1px solid slategray; }
+      body .imagenes .carouseles .carousel .carousel-inner .container .row div .carousel-item .card {
+        height: 200px !important; }
+        body .imagenes .carouseles .carousel .carousel-inner .container .row div .carousel-item .card .card-img-top {
+          height: 50vh;
+          transition: 1s; }
+          body .imagenes .carouseles .carousel .carousel-inner .container .row div .carousel-item .card .card-img-top:hover {
+            transform: scale(1.2); }
+          body .imagenes .carouseles .carousel .carousel-inner .container .row div .carousel-item .card .card-img-top .card-body h5 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            text-align: center; }
+          body .imagenes .carouseles .carousel .carousel-inner .container .row div .carousel-item .card .card-img-top .card-body p {
+            padding: 1rem 1.2rem;
+            margin: 0 auto;
+            line-height: 1.8rem;
+            font-family: "PT Serif", serif;
+            font-size: 1.1rem;
+            text-align: center; }
+  body .imagenes .carouseles .carousel .controls-top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-evenly; }
+    body .imagenes .carouseles .carousel .controls-top a {
+      align-self: center; }
+      body .imagenes .carouseles .carousel .controls-top a i {
+        font-size: 30px;
+        color: #57A167;
+        border-radius: 10%;
+        position: relative;
+        bottom: 60px; }

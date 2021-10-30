@@ -43,9 +43,21 @@
                     border-radius: 1.2rem;
                     object-fit: cover;
                     &:hover{
-                        opacity:0.6;
+                        opacity: 0.6;
+                    }
+
+                        
                     }
                 }
+                .articulo-info{
+                    text-align: center;
+                    a{
+                        text-decoration: none;
+                        font-size:20px;
+                        //display: none;
+                    }
+                }
+                
             }
         }
     }
@@ -70,7 +82,7 @@
             .carousel-inner{
                 .carousel-item{
                     img{
-                        max-width: 100%;
+                        height: 20vh;
                         
                     }
                 }
@@ -122,10 +134,13 @@
                         }
                         .contact-form__input--activo{
                             @include estiloBotones(100px);
+                            @media screen and (max-width:600px) and (min-width:320px){
+                                width: 90%;
+                            }
+                            
                         }
                     }
                 }
             }
         }
     }
-} 

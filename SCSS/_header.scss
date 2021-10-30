@@ -9,7 +9,12 @@ header{
                 }
             }
             .collapse{
-                .navbar-nav{
+                .menu{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: space-between;
+
                     .nav-item{
                         justify-content: center;
                         &:hover{
@@ -19,7 +24,9 @@ header{
                             }
                         }
                         .nav-link{
+                            //display: block;
                             text-decoration: none;
+                            //height:100%;
                             color:black;
                             font: {
                                 size: 15px;

@@ -1,28 +1,41 @@
-.nuevaColeccion {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: center;
-    .caja2 {
-        background-color:rgb(19, 18, 18);
-        color: white;
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        h3{
-            margin: 30px auto;
-            padding:20px;
-        }
-        a{
-            font-family:'Open Sans', sans-serif;
-            text-transform: uppercase;
-            text-align: center;
-            text-decoration: none;
-            color: white;
-        }
+.container{
+    .row{
+        div{
+            div{
+                img{
+                    object-fit: cover;
+                    width: auto;
+                }
+            }
+            .caja2 {
+                background-color:rgb(19, 18, 18);
+                color: white;
+                //display: flex;
+                //flex-direction: column;
+                //justify-content:center;
+                height: 50vh;
+                h3{
+                    margin: 30px auto;
+                    padding:20px;
+                }
+                a{
+                    font-family:'Open Sans', sans-serif;
+                    text-transform: uppercase;
+                    text-align: center;
+                    text-decoration: none;
+                    color: white;
+                }
+
+
+
+
+
+            }
+        }   
     }
+    
 }
+
 
 
 
