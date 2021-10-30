@@ -435,8 +435,7 @@ body main section .formulario {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  border: 1px solid black; }
+  box-sizing: border-box; }
 
 body {
   color: #444;
