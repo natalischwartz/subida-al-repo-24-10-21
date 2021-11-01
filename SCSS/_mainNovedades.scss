@@ -1,40 +1,43 @@
 .container{
     .row{
         div{
-            div{
-                img{
-                    object-fit: cover;
-                    width: auto;
-                }
+            img{
+                width:20vw;
             }
+        }    
+        div{
             .caja2 {
-                background-color:rgb(19, 18, 18);
-                color: white;
-                //display: flex;
-                //flex-direction: column;
-                //justify-content:center;
-                height: 50vh;
+            background-color:rgb(19, 18, 18);
+            color: white;
                 h3{
-                    margin: 30px auto;
-                    padding:20px;
+                margin: 30px auto;
+                padding:20px;
                 }
                 a{
-                    font-family:'Open Sans', sans-serif;
-                    text-transform: uppercase;
-                    text-align: center;
-                    text-decoration: none;
-                    color: white;
+                font-family:'Open Sans', sans-serif;
+                text-transform: uppercase;
+                text-align: center;
+                text-decoration: none;
+                color: white;
                 }
 
 
 
 
 
-            }
+
+
+
+
+
+            }    
+            
+
+
+
+        }
         }   
     }
-    
-}
 
 
 

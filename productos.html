@@ -35,27 +35,28 @@
     <header class="sticky-top">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <a href="index.html" class="navbar-brand">
                     <img class="logo img-fluid d-inline-block align-top" src="./imagenes/ICONO/icono-decoronce2.png" alt="Decoronce">
                 </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="menuNavegacion">
-                    <ul class="navbar-nav ms-auto text-center menu">
+                    <ul class="navbar-nav ms-auto menu">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
+                            aria-haspopup="true" aria-expanded="false" href="productos.html">Productos
                             </a>
-                            <ul class="oculto">
-                                <li><a href="productos.html" class="nav-link">Tapicería</a></li>
-                                <li><a href="productos.html" class="nav-link">Cortinería</a></li>
-                                <li><a href="productos.html" class="nav-link">Mantelería</a></li>
+                            <ul class="oculto dropdown-menu">
+                                <li><a href="productos.html" class="nav-link dropdown-item">Tapicería</a></li>
+                                <li><a href="productos.html" class="nav-link dropdown-item">Cortinería</a></li>
+                                <li><a href="productos.html" class="nav-link dropdown-item">Mantelería</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -79,11 +80,11 @@
         <section>
             <h1>Productos</h1>
         </section>
-        <h2 class="text-center">Telas de Tapicería</h2>
+        <h2 class="text-center" id="tapiceria">Telas de Tapicería</h2>
         <div class="container my-5 w-75">       
             <div class="row">
                 <div class="col-lg-4 col-md-8 col-sm-10 mx-auto">
-                    <div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div id="miCarousel1" class="carousel slide" data-ride="carousel" data-interval="false">
                     <!--Diapositivas-->
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
@@ -256,29 +257,31 @@
                             </div>
                         </div><!--carousel inner-->    
                         <!-- Controles -->
-
                         <!--Controls-->
-                        <div class="controls-top">
-                    <a class="btn-floating " href="#miCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                    <a class="btn-floating" href="#miCarousel" data-slide="next"><i
-                    class="fa fa-chevron-right"></i></a>
-                        </div>
-                        <!--/.Controls-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel1" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarousel1" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        
                     </div> <!--carouselmiCarousel-->
                 </div> <!--.col-->    
 
 
-                <!--Carousel Jackard Copacabana-->
+                <!--Carousel Chenille Lola Fajas-->
                 <div class="col-lg-4 col-md-8 col-sm-10  mx-auto">
-                    <div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div id="miCarousel2" class="carousel slide" data-ride="carousel" data-interval="false">
                     <!-- Diapositivas -->
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <div class="card mb-2">
-                                    <img src="./imagenes/PRODUCTOS/yackard-copacabana-portada.JPG" class="card-img-top d-block w-100" alt="copacabana portada">
+                                    <img src="./imagenes/PRODUCTOS/chenille-rayado-portada.jpg" class="card-img-top d-block w-100" alt="chenille">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Jacquard Copacabana 3.20 de ancho </h5>
-                                        <p class="card-text">Tela resistente, antidesgarro y con proceso antimanchas.Diseños en labrado y liso.
+                                        <h5 class="card-title">Chenille Lola Fajas 1.40 de ancho</h5>
+                                        <p class="card-text">El Chenille es una tela resistente, duradera, agradable al tacto y cálida. Es fácil de limpiar y se arruga poco.
                                         </p>
                                         <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
                                     </div>
@@ -286,10 +289,10 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="card mb-2">
-                                    <img src="./imagenes/PRODUCTOS/copacabana-hojitas-2.PNG" class="card-img-top d-block w-100 "alt="copacabana diseño hojitas">
+                                    <img src="./imagenes/PRODUCTOS/lola-fajas-ciruela-pimenton.PNG" class="card-img-top d-block w-100 "alt="chenille">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Hojitas Sepia</h5>
-                                        <p class="card-text">Tela resistente, antidesgarro y con proceso antimanchas.Diseños en labrado y liso.
+                                        <h5 class="card-title">Ciruela-Pimentón</h5>
+                                        <p class="card-text">El Chenille es una tela resistente, duradera, agradable al tacto y cálida. Es fácil de limpiar y se arruga poco.
                                         </p>
                                         <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
                                     </div>
@@ -297,10 +300,32 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="card mb-2">
-                                    <img src="./imagenes/PRODUCTOS/copacabana-hojitas.PNG" class="card-img-top d-block w-100" alt="copacabana diseño hojitas">
+                                    <img src="./imagenes/PRODUCTOS/lola-fajas-ebano-plomo.PNG" class="card-img-top d-block w-100" alt="chenille">
                                     <div class="card-body text-center ">
-                                        <h5 class="card-title">Hojitas Terracota</h5>
-                                        <p class="card-text">Tela resistente, antidesgarro y con proceso antimanchas.Diseños en labrado y liso.
+                                        <h5 class="card-title">Ebano-Plomo</h5>
+                                        <p class="card-text">El Chenille es una tela resistente, duradera, agradable al tacto y cálida. Es fácil de limpiar y se arruga poco.
+                                        </p>
+                                        <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mb-2">
+                                    <img src="./imagenes/PRODUCTOS/lola-fajas-mandarina.PNG" class="card-img-top d-block w-100" alt="chenille">
+                                    <div class="card-body text-center ">
+                                        <h5 class="card-title">Mandarina</h5>
+                                        <p class="card-text">El Chenille es una tela resistente, duradera, agradable al tacto y cálida. Es fácil de limpiar y se arruga poco.
+                                        </p>
+                                        <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mb-2">
+                                    <img src="./imagenes/PRODUCTOS/lola-fajas-pimenton-topo.PNG" class="card-img-top d-block w-100" alt="chenille">
+                                    <div class="card-body text-center ">
+                                        <h5 class="card-title">Pimentón-Topo</h5>
+                                        <p class="card-text">El Chenille es una tela resistente, duradera, agradable al tacto y cálida. Es fácil de limpiar y se arruga poco.
                                         </p>
                                         <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
                                     </div>
@@ -308,20 +333,22 @@
                             </div>
                         </div> <!--carousel-inner-->         
                         <!-- Controles -->
-
                         <!--Controls-->
-                        <div class="controls-top">
-                            <a class="btn-floating" href="#miCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                            <a class="btn-floating" href="#miCarousel" data-slide="next"><i
-                            class="fa fa-chevron-right"></i></a>
-                        </div>
-                        <!--/.Controls-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel2" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarousel2" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        
                     </div> <!--miCarousel-->
                 </div> <!--.col-->    
         
                 <!--Carousel Jackard Estampado-->
                 <div class="col-lg-4 col-md-8 col-sm-10  mx-auto">
-                    <div id="miCarousel" class="carousel slide " data-ride="carousel" data-interval="false">
+                    <div id="miCarousel3" class="carousel slide " data-ride="carousel" data-interval="false">
                     <!-- Diapositivas -->
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
@@ -414,14 +441,16 @@
                             </div>
                         </div> <!--carousel-inner-->        
                         <!-- Controles -->
-
                         <!--Controls-->
-                        <div class="controls-top">
-                            <a class="btn-floating" href="#miCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                            <a class="btn-floating" href="#miCarousel" data-slide="next"><i
-                            class="fa fa-chevron-right"></i></a>
-                        </div>
-                        <!--/.Controls-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel3" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarousel3" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        
                     </div> <!--miCarousel-->  
                 </div> <!--.col-->     
             </div> <!--.row-->
@@ -431,12 +460,12 @@
             <div class="row justify-content-around">
                 <div class="col-lg-4 col-md-8 col-sm-10">
                     <!--Carousel Pana Porsche-->
-                    <div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div id="miCarousel4" class="carousel slide" data-bs-ride="carousel" data-interval="false">
                     <!-- Diapositivas -->
-                        <div class="carousel-inner" role="listbox">
+                        <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="card mb-2">
-                                    <img src="./imagenes/PRODUCTOS/pana-portada.JPG" class="card-img-top d-block w-100" alt="pana portada">
+                                    <img src="./imagenes/PRODUCTOS/pana-portada.PNG" class="card-img-top d-block w-100" alt="pana portada">
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Pana Porsche 1.40 de ancho</h5>
                                         <p class="card-text">Tela gruesa de algodón, de textura similar al terciopelo, opaca, gruesa y muy resistente.
@@ -482,17 +511,22 @@
                         <!-- Controles -->
                 
                         <!--Controls-->
-                        <div class="controls-top">
-                            <a class="btn-floating" href="#miCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                            <a class="btn-floating" href="#miCarousel" data-slide="next"><i
-                            class="fa fa-chevron-right"></i></a>
-                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel4" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarousel4" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+
                         <!--/.Controls-->
                     </div> <!--miCarousel-->
                 </div> <!--.col-->
                 <div class="col-lg-4 col-md-8 col-sm-10 ">
                     <!--Carousel Tusor Rayado -->  
-                    <div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div id="miCarousel5" class="carousel slide" data-ride="carousel" data-interval="false">
                         <!-- Diapositivas -->
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
@@ -563,32 +597,33 @@
                             </div>
                         </div> <!--carousel-inner-->
                         <!-- Controles -->
-
                         <!--Controls-->
-                        <div class="controls-top">
-                        <a class="btn-floating" href="#miCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                        <a class="btn-floating" href="#miCarousel" data-slide="next"><i
-                        class="fa fa-chevron-right"></i></a>
-                        </div>
-                        <!--/.Controls-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel5" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarousel5" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div> <!--carouselmiCarousel--> 
                 </div> <!--.col-->
             </div> <!--.row-->
         </div> <!--.container-->
         <!--fin seccion telas de tapiceria-->
         
-        <h2 class="text-center">Telas de cortinería</h2>
+        <h2 class="text-center" id="cortineria">Telas de cortinería</h2>
         <div class="container my-5 w-75">
             <div class="row justify-content-around">
                 <div class="col-lg-4 col-md-8 col-sm-10">
                 <!--Carousel Gasa Arrugada-->
-                    <div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div id="miCarousel6" class="carousel slide" data-ride="carousel" data-interval="false">
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <div class="card mb-2">
-                                    <img src="./imagenes/PRODUCTOS/gasa-arugada-portada.JPG" class="card-img-top d-block w-100" alt="gasa arrugada">
+                                    <img src="./imagenes/PRODUCTOS/gasa-arugada-portada.JPG" class="card-img-top d-block" alt="gasa arrugada">
                                     <div class="card-body text-center ">
-                                        <h5 class="card-title">Gasa Arrugada</h5>
+                                        <h5 class="card-title">Gasa Arrugada 2.50 de ancho</h5>
                                         <p class="card-text">Género traslucido con las clásicas arruguitas del tusor. Tambien llamada Gasa Pañalera.
                                         </p>
                                         <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
@@ -631,23 +666,25 @@
                         </div> <!--carousel-inner-->
                         <!-- Controles -->
                         <!--Controls-->
-                        <div class="controls-top">
-                            <a class="btn-floating" href="#miCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                            <a class="btn-floating" href="#miCarousel" data-slide="next"><i
-                            class="fa fa-chevron-right"></i></a>
-                        </div>
-                        <!--/.Controls-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel6" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarousel6" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div> <!--carouselmiCarousel-->
                 </div> <!--.col-->
                 <div class="col-lg-4 col-md-8 col-sm-10">
                     <!--Carousel Jacquard Crudo-->
-                    <div id="miCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                    <div id="miCarousel7" class="carousel slide" data-ride="carousel" data-interval="false">
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <div class="card mb-2">
                                     <img src="./imagenes/PRODUCTOS/crudo-portada.PNG" class="card-img-top d-block w-100" alt="jacquard crudo">
                                     <div class="card-body text-center ">
-                                        <h5 class="card-title">Jacquard Crudo</h5>
+                                        <h5 class="card-title">Jacquard Crudo 3.00 mts de ancho</h5>
                                         <p class="card-text">Jacquard rústico pesado ideal para cortinería, cubrecamas, almohadones y fundas. Distintas tramas en color crudo.
                                         </p>
                                         <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
@@ -767,36 +804,157 @@
                         </div> <!--carousel-inner-->
                         <!-- Controles -->
                         <!--Controls-->
-                        <div class="controls-top">
-                            <a class="btn-floating" href="#miCarousel" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
-                            <a class="btn-floating" href="#miCarousel" data-slide="next"><i
-                            class="fa fa-chevron-right"></i></a>
-                        </div>
-                        <!--/.Controls-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel7" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarousel7" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div> <!--carouselmiCarousel-->
                 </div> <!--.col-->
             </div> <!--.row-->
-        </div> <!--container-->   
-
-        <section>
-            <h2 id="manteleria">Telas de Mantelería</h2>
-            <div>
-                <ul>
-                    <li>Gabardina estampada</li>
-                    <img src="imagenes/PORTADA/Gabardina-estampada.PNG" alt="gabardinaestampada">
-                    <img src="imagenes/PRODUCTOS/gabardina-plumas-azul.PNG" alt="image">
-                    <img src="imagenes/PRODUCTOS/chevron-gris.PNG" alt="image">
-                    <img src="imagenes/PRODUCTOS/gabardina-loros.PNG" alt="image">
-                    <img src="imagenes/PRODUCTOS/gabardina-plumas-rosa.PNG" alt="image">
-                    <img src="imagenes/PRODUCTOS/chevron-negro.PNG" alt="image">
-                    <img src="imagenes/PRODUCTOS/hojas-tropicales.PNG" alt="image">
-                    <li>Nido de abeja</li>
-                    <img src="imagenes/PRODUCTOS/nido-de-abeja-gris.PNG" alt="nidodeabeja">
-                    <img src="imagenes/PRODUCTOS/nido-de-abeja-rosa.PNG" alt="nidodeabeja ">
-                    <li>Tropical estampado</li>
-                </ul>
-            </div>
-        </section>-->           
+        </div> <!--container-->
+        <!--fin seccion telas de cortineria-->
+        
+        <h2 class="text-center" id="cortineria">Telas de mantelería</h2>
+        <div class="container my-5 w-75">
+            <div class="row justify-content-around">
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <!--carousel Gabardina Estampada-->
+                    <div id="miCarousel8" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="card mb-2">
+                                    <img src="imagenes/PORTADA/Gabardina-estampada.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <div class="card-body text-center ">
+                                        <h5 class="card-title">Gabardina Estampada 1.60 de ancho</h5>
+                                        <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
+                                        </p>
+                                        <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mb-2">
+                                    <img src="imagenes/PRODUCTOS/gabardina-plumas-azul.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <div class="card-body text-center ">
+                                        <h5 class="card-title">Plumas azul</h5>
+                                        <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
+                                        </p>
+                                        <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="card mb-2">
+                                    <img src="imagenes/PRODUCTOS/chevron-gris.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <div class="card-body text-center ">
+                                        <h5 class="card-title">Chevron gris</h5>
+                                        <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
+                                        </p>
+                                        <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="card mb-2">
+                                    <img src="imagenes/PRODUCTOS/gabardina-loros.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <div class="card-body text-center ">
+                                        <h5 class="card-title">Loros</h5>
+                                        <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
+                                        </p>
+                                        <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item ">
+                                <div class="card mb-2">
+                                    <img src="imagenes/PRODUCTOS/gabardina-plumas-rosa.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <div class="card-body text-center ">
+                                        <h5 class="card-title">Plumas Rosa</h5>
+                                        <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
+                                        </p>
+                                        <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mb-2">
+                                    <img src="imagenes/PRODUCTOS/chevron-negro.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <div class="card-body text-center ">
+                                        <h5 class="card-title">Chevron negro</h5>
+                                        <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
+                                        </p>
+                                        <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mb-2">
+                                    <img src="imagenes/PRODUCTOS/hojas-tropicales.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <div class="card-body text-center ">
+                                        <h5 class="card-title">Hojas tropicales</h5>
+                                        <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
+                                        </p>
+                                        <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--carousel-inner-->   
+                        <!-- Controles -->
+                        <!--Controls-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel8" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarousel8" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div> <!--carouselmiCarousel-->
+                </div> <!--.col-->
+                <div class="col-lg-4 col-md-8 col-sm-10">
+                    <div id="miCarousel9" class="carousel slide" data-ride="carousel" data-interval="false">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active">
+                                <div class="card mb-2">
+                                    <img src="imagenes/PRODUCTOS/nido-de-abeja-gris.PNG" class="card-img-top d-block" alt="nido de abeja">
+                                    <div class="card-body text-center ">
+                                        <h5 class="card-title">Nido de abeja gris</h5>
+                                        <p class="card-text">Tela con textura, de tejido plano, sin brillo, semigruesa, cálida, cómoda, fácil lavado, resistente al uso y original.
+                                        </p>
+                                        <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mb-2">
+                                    <img src="imagenes/PRODUCTOS/nido-de-abeja-rosa.PNG" class="card-img-top d-block" alt="nido de abeja">
+                                    <div class="card-body text-center ">
+                                        <h5 class="card-title">Nido de abeja rosa</h5>
+                                        <p class="card-text">Tela con textura, de tejido plano, sin brillo, semigruesa, cálida, cómoda, fácil lavado, resistente al uso y original.
+                                        </p>
+                                        <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> <!--carousel-inner-->
+                        <!-- Controles -->
+                        <!--Controls-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#miCarousel9" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#miCarousel9" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div> <!--miCarousel-->
+                </div> <!--.col-->
+            </div> <!--row-->
+        </div> <!--container-->       
     </main>
     <footer class="container-fluid footer">
         <section class="seccionVerde row">
@@ -809,8 +967,8 @@
             <div class="divEnLinea col-lg-4">   
                 <h4>CONTACTANOS</h4>
                 <h5>Dirección:Azcuénaga 419, C1029,CABA</h5>
-                <h5>Teléfono:011 4952-8742</h5>
-                <h5>Whatsapp:011 2451-7095</h5>
+                <h5>Teléfono: 011 4952-8742</h5>
+                <h5>Whatsapp: 011 2451-7095</h5>
                 <h5>Email:decoronce419@gmail.com</h5>
             </div>
             <div class="divEnLinea col-lg-4">
@@ -842,7 +1000,7 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 
 </body>
 </html>

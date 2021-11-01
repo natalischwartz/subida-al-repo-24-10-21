@@ -1,6 +1,21 @@
 header{
+        width: 100%;
         background-color: white;
         box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+        position: fixed;
+        top:0;
+        left:0;
+        animation: smoothScroll 1s forwards;
+
+        @keyframes smoothScroll {
+            0% {
+                transform: translateY(-140px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+            
+        }
     .container-fluid{
         .navbar{
             a{
@@ -8,68 +23,63 @@ header{
                     width:50%;
                 }
             }
+            .navbar-toggler{
+                border:none;
+                margin-right:10px;
+                .navbar-toggler-icon{
+                    color: black;
+                }
+            }
             .collapse{
                 .menu{
-                    display: flex;
-                    flex-direction: row;
-                    flex-wrap: nowrap;
-                    justify-content: space-between;
-
                     .nav-item{
-                        justify-content: center;
-                        &:hover{
-                            .oculto{
-                                visibility: visible;
-                                opacity: 1;
-                            }
-                        }
                         .nav-link{
-                            //display: block;
-                            text-decoration: none;
-                            //height:100%;
-                            color:black;
+                            color: black;
                             font: {
-                                size: 15px;
-                                weight: bold;
+                                size:15px;
+                                family:$fuenteHeadings;
                             }
                             &:hover{
+                                transition:all ease .5s;
                                 color:$colorPrincipal;
-                                transition: all .3s;
-                            }
-                        }
-                        .oculto{
-                            position: absolute;
-                            background-color: white;
-                            padding:10px 0px;
-                            border-radius: 0 0 15px 15px;
-                            visibility:hidden;
-                            opacity: 0;
-                            transition: opacity 1.5s;
-                            list-style-type: none;
-                            li{
-                                .nav-link{
-                                    display: block;
-                                    color: black;
-                                    font-size: 14px;
-                                    text-decoration: none;
-                                }
+                                
                             }
                         }
                     }
-                    li{
-                        a{
-                            i{
-                                color:black;
-                                    font-size: 20px;
-                                    justify-content: center;
-                                    &:hover{
-                                    color:$colorPrincipal;
+                    .dropdown-menu{
+                        transition: all 1s;
+                        border: none;
+                        li{
+                            text-align:left;
+                            .nav-link{
+                                color: black;
+                                font-size: 14px;
+                                &:hover{
+                                    background-color: white;
                                 }
+                                
                             }
                         }
+
                     }
                 }
             }
+                    li{ 
+                        a{
+                            i{
+                                color:black;
+                                font-size: 20px;
+                                justify-content: center;
+                                &:hover{
+                                color:$colorPrincipal;
+                                }
+                            }
+                        }
+                    }
         }
     }
 }
+
+
+
+                    

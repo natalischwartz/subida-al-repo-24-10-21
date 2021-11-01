@@ -1,46 +1,47 @@
 header {
+  width: 100%;
   background-color: white;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3); }
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: smoothScroll 1s forwards; }
+
+@keyframes smoothScroll {
+  0% {
+    transform: translateY(-140px); }
+  100% {
+    transform: translateY(0px); } }
   header .container-fluid .navbar a .logo {
     width: 50%; }
-  header .container-fluid .navbar .collapse .menu {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-between; }
-    header .container-fluid .navbar .collapse .menu .nav-item {
-      justify-content: center; }
-      header .container-fluid .navbar .collapse .menu .nav-item:hover .oculto {
-        visibility: visible;
-        opacity: 1; }
-      header .container-fluid .navbar .collapse .menu .nav-item .nav-link {
-        text-decoration: none;
+  header .container-fluid .navbar .navbar-toggler {
+    border: none;
+    margin-right: 10px; }
+    header .container-fluid .navbar .navbar-toggler .navbar-toggler-icon {
+      color: black; }
+  header .container-fluid .navbar .collapse .menu .nav-item .nav-link {
+    color: black;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif; }
+    header .container-fluid .navbar .collapse .menu .nav-item .nav-link:hover {
+      transition: all ease .5s;
+      color: #57A167; }
+  header .container-fluid .navbar .collapse .menu .dropdown-menu {
+    transition: all 1s;
+    border: none; }
+    header .container-fluid .navbar .collapse .menu .dropdown-menu li {
+      text-align: left; }
+      header .container-fluid .navbar .collapse .menu .dropdown-menu li .nav-link {
         color: black;
-        font-size: 15px;
-        font-weight: bold; }
-        header .container-fluid .navbar .collapse .menu .nav-item .nav-link:hover {
-          color: #57A167;
-          transition: all .3s; }
-      header .container-fluid .navbar .collapse .menu .nav-item .oculto {
-        position: absolute;
-        background-color: white;
-        padding: 10px 0px;
-        border-radius: 0 0 15px 15px;
-        visibility: hidden;
-        opacity: 0;
-        transition: opacity 1.5s;
-        list-style-type: none; }
-        header .container-fluid .navbar .collapse .menu .nav-item .oculto li .nav-link {
-          display: block;
-          color: black;
-          font-size: 14px;
-          text-decoration: none; }
-    header .container-fluid .navbar .collapse .menu li a i {
-      color: black;
-      font-size: 20px;
-      justify-content: center; }
-      header .container-fluid .navbar .collapse .menu li a i:hover {
-        color: #57A167; }
+        font-size: 14px; }
+        header .container-fluid .navbar .collapse .menu .dropdown-menu li .nav-link:hover {
+          background-color: white; }
+  header .container-fluid .navbar li a i {
+    color: black;
+    font-size: 20px;
+    justify-content: center; }
+    header .container-fluid .navbar li a i:hover {
+      color: #57A167; }
 
 .main .telas .portada {
   width: 100%;
@@ -85,21 +86,55 @@ header {
   font-weight: 900;
   letter-spacing: 3px; }
 
+.main .productos .row div .hover {
+  width: 200px;
+  height: 200px;
+  position: relative; }
+  .main .productos .row div .hover:before, .main .productos .row div .hover:after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    opacity: 0.3;
+    transition: all 300ms; }
+  .main .productos .row div .hover:before {
+    transform: rotate(90deg) translateY(-90px) translateX(0px); }
+  .main .productos .row div .hover:after {
+    transform: rotate(90deg) translateY(108px) translateX(-2px); }
+  .main .productos .row div .hover:hover::before {
+    transform: rotate(90deg) translateY(-180px) translateX(0px); }
+  .main .productos .row div .hover:hover::after {
+    transform: rotate(90deg) translateY(200px) translateX(-2px); }
+  .main .productos .row div .hover:hover h4 {
+    transform: translate(-50%, -50%) scale(1); }
+
+.main .productos .row div h4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  color: black;
+  font-weight: bold;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  padding: 20px;
+  z-index: 2;
+  transition: all 300ms; }
+
 .main .productos .row div img {
-  width: 12rem;
-  height: 12rem;
+  width: 195px;
+  height: 197px;
   border-radius: 1.2rem;
   object-fit: cover; }
-  .main .productos .row div img:hover {
-    opacity: 0.6; }
+  @media screen and (min-width: 550px) and (max-width: 760px) {
+    .main .productos .row div img {
+      width: 15rem;
+      height: 15rem; } }
 
-.main .productos .row .articulo-info {
-  text-align: center; }
-  .main .productos .row .articulo-info a {
-    text-decoration: none;
-    font-size: 20px; }
-
-.marcas h2 {
+.main .marcas h2 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   margin: 20px 0 10px 0;
@@ -108,22 +143,25 @@ header {
   font-weight: 900;
   letter-spacing: 3px; }
 
-.marcas .carousel {
+.main .marcas .carousel {
   width: 100%;
   margin-bottom: 30px; }
-  .marcas .carousel .carousel-indicators {
+  .main .marcas .carousel .carousel-indicators {
     margin-bottom: -2rem; }
-    .marcas .carousel .carousel-indicators button {
+    .main .marcas .carousel .carousel-indicators button {
       width: 10px;
       height: 10px;
       border-radius: 50%;
       background: #ccc;
       border: 1px solid #ccc;
       margin-bottom: 10px; }
-  .marcas .carousel .carousel-inner .carousel-item img {
+  .main .marcas .carousel .carousel-inner .carousel-item img {
     height: 20vh; }
+    @media screen and (min-width: 460px) and (max-width: 765px) {
+      .main .marcas .carousel .carousel-inner .carousel-item img {
+        min-width: 50px; } }
 
-.contactanos h2 {
+.main .contactanos h2 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   margin: 20px 0 10px 0;
@@ -132,36 +170,36 @@ header {
   font-weight: 900;
   letter-spacing: 3px; }
 
-.contactanos iframe {
+.main .contactanos iframe {
   width: 100%;
   height: 312px; }
 
-.contactanos .row {
+.main .contactanos .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start; }
-  .contactanos .row .contacto {
+  .main .contactanos .row .contacto {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; }
-    .contactanos .row .contacto p {
+    .main .contactanos .row .contacto p {
       font: size 14px;
       color: #888;
       font-weight: 200;
       font-family: "PT Serif", serif;
       margin-left: 5px; }
-    .contactanos .row .contacto i {
+    .main .contactanos .row .contacto i {
       font-size: 25px;
       color: #007bff; }
 
-.contactanos .contact-form .contactForm .form .contact-form__div {
+.main .contactanos .contact-form .contactForm .form .contact-form__div {
   margin: 10px auto; }
-  .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input:focus, .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__textarea:focus {
+  .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input:focus, .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__textarea:focus {
     transition: 0.4s;
     padding: 8px 0px 5px;
     background: lightgrey; }
-  .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
+  .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
     background: #78e08f;
     width: 100px;
     color: white;
@@ -175,11 +213,11 @@ header {
     letter-spacing: 1.5px;
     font-family: Arial;
     cursor: pointer; }
-    .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo:hover {
+    .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo:hover {
       background-color: #57A167;
       color: white; }
     @media screen and (max-width: 600px) and (min-width: 320px) {
-      .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
+      .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
         width: 90%; } }
 
 .footer .seccionVerde {
@@ -255,10 +293,7 @@ header {
     border-radius: 50%;
     position: fixed;
     right: 15px;
-    bottom: 15px;
-    transition: all 0.5s; }
-    .footer .seccionVerde div .backToTop:hover {
-      opacity: 0.7; }
+    bottom: 15px; }
     .footer .seccionVerde div .backToTop i {
       padding-top: 12px;
       color: #fff; }
@@ -304,14 +339,12 @@ body main .valores .row .div-valores {
     font-size: 18px;
     text-align: center; }
 
-.container .row div div img {
-  object-fit: cover;
-  width: auto; }
+.container .row div img {
+  width: 20vw; }
 
 .container .row div .caja2 {
   background-color: #131212;
-  color: white;
-  height: 50vh; }
+  color: white; }
   .container .row div .caja2 h3 {
     margin: 30px auto;
     padding: 20px; }
@@ -441,41 +474,45 @@ body {
   color: #444;
   font-family: 'Open Sans', sans-serif;
   background-color: white; }
-  body .imagenes .carouseles .carousel .carousel-inner {
+  body .imagenes .container .row div .carousel .carousel-inner {
     width: 100%; }
-    body .imagenes .carouseles .carousel .carousel-inner .container .row div .carousel-item {
+    body .imagenes .container .row div .carousel .carousel-inner .carousel-item {
       height: 100vh;
       box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
       border: 1px solid slategray; }
-      body .imagenes .carouseles .carousel .carousel-inner .container .row div .carousel-item .card {
+      body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card {
         height: 200px !important; }
-        body .imagenes .carouseles .carousel .carousel-inner .container .row div .carousel-item .card .card-img-top {
+        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top {
           height: 50vh;
           transition: 1s; }
-          body .imagenes .carouseles .carousel .carousel-inner .container .row div .carousel-item .card .card-img-top:hover {
+          body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top:hover {
             transform: scale(1.2); }
-          body .imagenes .carouseles .carousel .carousel-inner .container .row div .carousel-item .card .card-img-top .card-body h5 {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            text-align: center; }
-          body .imagenes .carouseles .carousel .carousel-inner .container .row div .carousel-item .card .card-img-top .card-body p {
-            padding: 1rem 1.2rem;
-            margin: 0 auto;
-            line-height: 1.8rem;
-            font-family: "PT Serif", serif;
-            font-size: 1.1rem;
-            text-align: center; }
-  body .imagenes .carouseles .carousel .controls-top {
+        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body h5 {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          text-align: center; }
+        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body p {
+          padding: 1rem 1.2rem;
+          margin: 0 auto;
+          line-height: 1.8rem;
+          font-family: "PT Serif", serif;
+          font-size: 1.1rem;
+          font-text-align: center; }
+  body .imagenes .container .row div .carousel .controls-top {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-evenly; }
-    body .imagenes .carouseles .carousel .controls-top a {
+    justify-content: space-between; }
+    body .imagenes .container .row div .carousel .controls-top a {
       align-self: center; }
-      body .imagenes .carouseles .carousel .controls-top a i {
-        font-size: 30px;
+      body .imagenes .container .row div .carousel .controls-top a i {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
         color: #57A167;
+        opacity: 40%;
         border-radius: 10%;
-        position: relative;
-        bottom: 60px; }
+        position: absolute;
+        bottom: 60px;
+        display: block; }

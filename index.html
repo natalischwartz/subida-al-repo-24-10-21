@@ -39,27 +39,28 @@
     <header class="sticky-top">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <a href="index.html" class="navbar-brand">
                     <img class="logo img-fluid d-inline-block align-top" src="./imagenes/ICONO/icono-decoronce2.png" alt="Decoronce">
                 </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="menuNavegacion">
-                    <ul class="navbar-nav ms-auto text-center menu">
+                    <ul class="navbar-nav ms-auto menu">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="productos.html">Productos
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
+                            aria-haspopup="true" aria-expanded="false" href="productos.html">Productos
                             </a>
-                            <ul class="oculto">
-                                <li><a href="productos.html" class="nav-link">Tapicería</a></li>
-                                <li><a href="productos.html" class="nav-link">Cortinería</a></li>
-                                <li><a href="productos.html" class="nav-link">Mantelería</a></li>
+                            <ul class="oculto dropdown-menu">
+                                <li><a href="productos.html" class="nav-link dropdown-item">Tapicería</a></li>
+                                <li><a href="productos.html" class="nav-link dropdown-item">Cortinería</a></li>
+                                <li><a href="productos.html" class="nav-link dropdown-item">Mantelería</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -94,7 +95,7 @@
                         <i class="material-icons">storefront</i>
                         <h3>Venta de telas</h3>
                         <p>
-                            Nos especializamos en la venta de telas a  mayoristas, minoristas, decoradores, confeccionistas,
+                            Venta de telas a  mayoristas, minoristas, <br> decoradores, confeccionistas,<br>
                             consumidores finales y más.
                         </p>
                     </div>        
@@ -123,42 +124,42 @@
             <div class="container productos ">
                 <h2 class="section-title">Productos</h2>
                 <div class="row">
-                    <div class=" col-md-6 col-lg-4 p-3">
-                        <img class="mx-auto d-block img-fluid" src="./imagenes/PRODUCTOS/tusor-rayado.PNG" alt="imagen tusor">
-                        <h4 class="articulo-info">
-                            <a href="#">Tusor Rayado</a>
-                        </h4>
+                    <div class="col-md-6 col-lg-4 p-3">
+                        <div class="hover mx-auto">
+                            <h4>Tusor rayado</h4>
+                            <img class="mx-auto" src="./imagenes/PRODUCTOS/tusor-rayado.PNG" alt="imagen tusor">
+                        </div>
                     </div>
                     <div class=" col-md-6 col-lg-4 p-3">
-                        <img class="mx-auto d-block img-fluid" src="./imagenes/PORTADA/Gabardina-estampada.PNG" alt="imagen gabardina estampada" >
-                        <h4 class="articulo-info">
-                            <a href="#">Tusor Rayado</a>
-                        </h4>
+                        <div class="hover mx-auto">
+                            <h4>Lino de tapicería</h4>
+                            <img class="mx-auto d-block img-fluid" src="./imagenes/PRODUCTOS/linen-portada.PNG" alt="imagen linen">
+                        </div>
+                    </div>
+                    <div class=" col-md-6 col-lg-4 p-3">
+                        <div class="hover mx-auto">
+                            <h4>Jacquard estampado</h4>
+                            <img class="mx-auto d-block img-fluid" src="./imagenes/PRODUCTOS/yackard-estampado-9.jpg" alt="imagen jacquard estampado">
+                        </div>   
+                    </div>
+                    <div class=" col-md-6 col-lg-4 p-3">
+                        <div class="hover mx-auto">
+                            <h4>Gabardina estampada</h4>
+                            <img class="mx-auto d-block img-fluid" src="./imagenes/PORTADA/Gabardina-estampada.PNG" alt="imagen gabardina estampada" >
+                        </div>
                     </div>
                     <div class=" col-md-6 col-lg-4 p-3" >
-                        <img class="mx-auto d-block img-fluid" src="./imagenes/PORTADA/pana.PNG" alt="imagen pana">
-                        <h4 class="articulo-info">
-                            <a href="#">Tusor Rayado</a>
-                        </h4>
-                    </div>
-                    <div class=" col-md-6 col-lg-4 p-3">     
-                        <img class="mx-auto d-block img-fluid" src="./imagenes/PRODUCTOS/crudo-corazon.PNG" alt="imagen jacquard crudo">
-                        <h4 class="articulo-info">
-                            <a href="#">Tusor Rayado</a>
-                        </h4>
-                    </div>
-                    <div class=" col-md-6 col-lg-4 p-3">   
-                        <img class="mx-auto d-block img-fluid" src="./imagenes/PRODUCTOS/yackard-estampado-9.jpg" alt="imagen jacquard estampado">
-                        <h4 class="articulo-info">
-                            <a href="#">Tusor Rayado</a>
-                        </h4>
+                        <div class="hover mx-auto">
+                            <h4>Pana</h4>
+                            <img class="mx-auto d-block img-fluid" src="./imagenes/PRODUCTOS/pana-portada.PNG" alt="imagen pana">
+                        </div>
                     </div>
                     <div class=" col-md-6 col-lg-4 p-3">
-                        <img class="mx-auto d-block img-fluid" src="./imagenes/PRODUCTOS/linen-portada.PNG" alt="imagen linen">
-                        <h4 class="articulo-info">
-                            <a href="#">Tusor Rayado</a>
-                        </h4>
-                    </div>    
+                        <div class="hover mx-auto">
+                            <h4>Jacquard crudo</h4>
+                            <img class="mx-auto d-block img-fluid" src="./imagenes/PRODUCTOS/crudo-rombo-circulo.PNG" alt="imagen jacquard crudo">
+                        </div>     
+                    </div>
                     <a class="text-center btn btn-primary w-25 mx-auto mb-3" href="productos.html">Ver todos los productos</a>
                 </div>
             </div>    
@@ -290,8 +291,8 @@
             <div class="divEnLinea col-lg-4">   
                 <h4>CONTACTANOS</h4>
                 <h5>Dirección:Azcuénaga 419, C1029,CABA</h5>
-                <h5>Teléfono:011 4952-8742</h5>
-                <h5>Whatsapp:011 2451-7095</h5>
+                <h5>Teléfono: 011 4952-8742</h5>
+                <h5>Whatsapp: 011 2451-7095</h5>
                 <h5>Email:decoronce419@gmail.com</h5>
             </div>
             <div class="divEnLinea col-lg-4">
@@ -324,9 +325,5 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-        <!--Menu Responsive Mobile-->
-
-        
 </body>
 </html>
