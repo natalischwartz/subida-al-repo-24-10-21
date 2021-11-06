@@ -118,14 +118,15 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: #57A167;
+  color: white;
   text-transform: uppercase;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
   text-shadow: 10px 10px 30px 10px black;
-  font-size: 20px;
+  font-size: 18px;
   z-index: 2;
-  transition: all 500ms; }
+  transition: all 500ms;
+  text-shadow: 1px 1px 2px black, 0 0 1em #57A167, 0 0 0.2em #57A167; }
 
 .main .productos .row div img {
   width: 195px;
@@ -267,49 +268,65 @@ header {
       font-size: 15px;
       font-weight: 200;
       letter-spacing: 0px; }
-    .footer .seccionVerde .divEnLinea .redes {
+    @media screen and (min-width: 320px) and (max-width: 828px) {
+      .footer .seccionVerde .divEnLinea .social-media {
+        display: none; } }
+    .footer .seccionVerde .divEnLinea .social-media .redes {
       display: flex;
       flex-direction: row;
       justify-content: center;
       align-items: center; }
-      .footer .seccionVerde .divEnLinea .redes a {
+      .footer .seccionVerde .divEnLinea .social-media .redes a {
         padding: 5px; }
-        .footer .seccionVerde .divEnLinea .redes a i {
+        .footer .seccionVerde .divEnLinea .social-media .redes a i {
           color: white;
           width: 20px; }
-  .footer .seccionVerde .cajaWhatsapp {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 90px;
-    right: 33px; }
-    .footer .seccionVerde .cajaWhatsapp a img {
-      width: 40px; }
-  .footer .seccionVerde .contain {
-    text-align: center; }
-    .footer .seccionVerde .contain h5 {
-      text-align: center;
-      font-family: "PT Serif", serif;
-      margin: 10px auto;
-      padding: 0;
-      font-size: 15px;
-      font-weight: 100;
-      letter-spacing: 0px; }
-  .footer .seccionVerde div .backToTop {
-    background-color: #78e08f;
-    color: white;
-    width: 44px;
-    height: 44px;
+    .footer .seccionVerde .divEnLinea .social-media .redes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .footer .seccionVerde .divEnLinea .social-media .redes a {
+        padding: 5px; }
+        .footer .seccionVerde .divEnLinea .social-media .redes a i {
+          color: white;
+          width: 20px; }
+
+.footer .cajaWhatsapp {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  bottom: 90px;
+  right: 33px; }
+  .footer .cajaWhatsapp a img {
+    width: 40px; }
+
+.footer .contain {
+  text-align: center; }
+  .footer .contain h5 {
     text-align: center;
-    font-size: 16px;
-    line-height: 1;
-    border-radius: 50%;
-    position: fixed;
-    right: 15px;
-    bottom: 15px; }
-    .footer .seccionVerde div .backToTop i {
-      padding-top: 12px;
-      color: #fff; }
+    font-family: "PT Serif", serif;
+    margin: 10px auto;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0px; }
+
+.footer div .backToTop {
+  background-color: #78e08f;
+  color: white;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1;
+  border-radius: 50%;
+  position: fixed;
+  right: 15px;
+  bottom: 15px; }
+  .footer div .backToTop i {
+    padding-top: 12px;
+    color: #fff; }
 
 body main section h1 {
   text-align: center;
@@ -488,39 +505,37 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: white; }
   body .imagenes .container .row div .carousel .carousel-inner {
-    width: 100%;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
     border: 1px solid slategray; }
-    body .imagenes .container .row div .carousel .carousel-inner .carousel-item {
-      height: 100vh; }
-      body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card {
-        height: 200px !important; }
-        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top {
-          height: 50vh;
-          transition: 1s;
-          object-fit: fill; }
-          body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top:hover {
-            transform: scale(1.1); }
-        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body {
-          height: 20vh; }
-          body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body h5 {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            text-align: center; }
-          body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body p {
-            padding: 1rem 1.2rem;
-            margin: 0 auto;
-            line-height: 1.8rem;
-            font-family: "PT Serif", serif;
-            font-size: 1.1rem;
-            font-text-align: center; }
-  body .imagenes .container .row div .carousel .carousel-control-prev .carousel-control-prev-icon {
-    width: 30px;
-    height: 30px;
+    body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card {
+      width: 100%; }
+      body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top {
+        height: 50vh;
+        transition: 1s;
+        object-fit: cover; }
+        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top:hover {
+          transform: scale(1.1); }
+      body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body h5 {
+          font-family: 'Open Sans', sans-serif;
+          font-weight: bold;
+          text-align: center; }
+        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body p {
+          padding: 1rem 1.2rem;
+          margin: 0 auto;
+          line-height: 1.8rem;
+          font-family: "PT Serif", serif;
+          font-size: 1.1rem;
+          font-text-align: center; }
+  body .imagenes .container .row div .carousel button span {
+    font-size: 40px;
     cursor: pointer;
-    color: #57A167;
-    opacity: 40%;
-    border-radius: 10%;
     position: absolute;
-    bottom: 60px;
-    display: block; }
+    top: 30vh;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+    border-radius: 20%; }

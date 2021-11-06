@@ -48,8 +48,8 @@
                     position: relative;
                     &:before,&:after{
                         content:"";
-                        width: 200px;
-                        height: 200px;
+                        width:200px;
+                        height:200px;
                         position: absolute;
                         top:0;
                         left:0;
@@ -87,14 +87,15 @@
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%) scale(0);
-                        color:$colorPrincipal;
+                        color:white;
                         text-transform: uppercase;
                         font-weight:bold;
                         font-family: $fuenteHeadings;
                         text-shadow:10px 10px 30px 10px black;
-                        font-size: 20px;
+                        font-size: 18px;
                         z-index:2;
                         transition: all 500ms;
+                        text-shadow:1px 1px 2px black, 0 0 1em $colorPrincipal, 0 0 0.2em $colorPrincipal;
                     }
                     img{
                     width:195px;
