@@ -19,23 +19,24 @@ header {
     margin-right: 10px; }
     header .container-fluid .navbar .navbar-toggler .navbar-toggler-icon {
       color: black; }
-  header .container-fluid .navbar .collapse .menu .nav-item .nav-link {
-    color: black;
-    font-size: 15px;
+  header .container-fluid .navbar .collapse .menu {
     font-family: "Open Sans", sans-serif; }
-    header .container-fluid .navbar .collapse .menu .nav-item .nav-link:hover {
-      transition: all ease .5s;
-      color: #57A167; }
-  header .container-fluid .navbar .collapse .menu .dropdown-menu {
-    transition: all 1s;
-    border: none; }
-    header .container-fluid .navbar .collapse .menu .dropdown-menu li {
-      text-align: left; }
-      header .container-fluid .navbar .collapse .menu .dropdown-menu li .nav-link {
-        color: black;
-        font-size: 14px; }
-        header .container-fluid .navbar .collapse .menu .dropdown-menu li .nav-link:hover {
-          background-color: white; }
+    header .container-fluid .navbar .collapse .menu .nav-item .nav-link {
+      color: black;
+      font-size: 15px; }
+      header .container-fluid .navbar .collapse .menu .nav-item .nav-link:hover {
+        transition: all ease .5s;
+        color: #57A167; }
+    header .container-fluid .navbar .collapse .menu .dropdown-menu {
+      transition: all 1s;
+      border: none; }
+      header .container-fluid .navbar .collapse .menu .dropdown-menu li {
+        text-align: left; }
+        header .container-fluid .navbar .collapse .menu .dropdown-menu li .nav-link {
+          color: black;
+          font-size: 14px; }
+          header .container-fluid .navbar .collapse .menu .dropdown-menu li .nav-link:hover {
+            background-color: white; }
   header .container-fluid .navbar li a i {
     color: black;
     font-size: 20px;
@@ -43,11 +44,12 @@ header {
     header .container-fluid .navbar li a i:hover {
       color: #57A167; }
 
-.main .telas .portada {
-  width: 100%;
-  text-align: center; }
-  .main .telas .portada img {
-    width: 40%; }
+.main .carousel-index .carousel .carousel-inner {
+  width: 100%; }
+  .main .carousel-index .carousel .carousel-inner .carousel-item img {
+    object-fit: unset;
+    height: 50vh;
+    width: 100%; }
 
 .main .servicios .container-fluid .seccionVerde {
   height: 100%;
@@ -71,7 +73,7 @@ header {
     .main .servicios .container-fluid .seccionVerde .divEnLinea h3 {
       text-align: center;
       font-family: "Open Sans", sans-serif;
-      margin: 20px 0 10px 0;
+      margin: 10px auto;
       padding: 0;
       font-size: 20px;
       font-weight: 800;
@@ -80,7 +82,7 @@ header {
 .main .productos h2 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  margin: 20px 0 10px 0;
+  margin: 10px auto;
   padding: 0;
   font-size: 25px;
   font-weight: 900;
@@ -99,15 +101,15 @@ header {
     left: 0;
     background-color: white;
     opacity: 0.3;
-    transition: all 300ms; }
+    transition: all 500ms; }
   .main .productos .row div .hover:before {
-    transform: rotate(90deg) translateY(-90px) translateX(0px); }
+    transform: rotate(90deg) translateY(-98px) translateX(0px); }
   .main .productos .row div .hover:after {
-    transform: rotate(90deg) translateY(108px) translateX(-2px); }
+    transform: rotate(90deg) translateY(98px) translateX(0px); }
   .main .productos .row div .hover:hover::before {
     transform: rotate(90deg) translateY(-180px) translateX(0px); }
   .main .productos .row div .hover:hover::after {
-    transform: rotate(90deg) translateY(200px) translateX(-2px); }
+    transform: rotate(90deg) translateY(180px) translateX(0px); }
   .main .productos .row div .hover:hover h4 {
     transform: translate(-50%, -50%) scale(1); }
 
@@ -116,13 +118,14 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
-  color: black;
+  color: #57A167;
+  text-transform: uppercase;
   font-weight: bold;
   font-family: "Open Sans", sans-serif;
+  text-shadow: 10px 10px 30px 10px black;
   font-size: 20px;
-  padding: 20px;
   z-index: 2;
-  transition: all 300ms; }
+  transition: all 500ms; }
 
 .main .productos .row div img {
   width: 195px;
@@ -131,13 +134,13 @@ header {
   object-fit: cover; }
   @media screen and (min-width: 550px) and (max-width: 760px) {
     .main .productos .row div img {
-      width: 15rem;
-      height: 15rem; } }
+      width: 12.5rem;
+      height: 12.5rem; } }
 
 .main .marcas h2 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  margin: 20px 0 10px 0;
+  margin: 10px auto;
   padding: 0;
   font-size: 25px;
   font-weight: 900;
@@ -157,49 +160,50 @@ header {
       margin-bottom: 10px; }
   .main .marcas .carousel .carousel-inner .carousel-item img {
     height: 20vh; }
-    @media screen and (min-width: 460px) and (max-width: 765px) {
+    @media screen and (min-width: 375px) and (max-width: 765px) {
       .main .marcas .carousel .carousel-inner .carousel-item img {
-        min-width: 50px; } }
+        width: 5rem;
+        height: 5rem; } }
 
-.main .contactanos h2 {
+.contactanos h2 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  margin: 20px 0 10px 0;
+  margin: 10px auto;
   padding: 0;
   font-size: 25px;
   font-weight: 900;
   letter-spacing: 3px; }
 
-.main .contactanos iframe {
+.contactanos iframe {
   width: 100%;
   height: 312px; }
 
-.main .contactanos .row {
+.contactanos .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start; }
-  .main .contactanos .row .contacto {
+  .contactanos .row .contacto {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; }
-    .main .contactanos .row .contacto p {
+    .contactanos .row .contacto p {
       font: size 14px;
       color: #888;
       font-weight: 200;
       font-family: "PT Serif", serif;
       margin-left: 5px; }
-    .main .contactanos .row .contacto i {
+    .contactanos .row .contacto i {
       font-size: 25px;
       color: #007bff; }
 
-.main .contactanos .contact-form .contactForm .form .contact-form__div {
+.contactanos .contact-form .contactForm .form .contact-form__div {
   margin: 10px auto; }
-  .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input:focus, .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__textarea:focus {
+  .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input:focus, .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__textarea:focus {
     transition: 0.4s;
     padding: 8px 0px 5px;
     background: lightgrey; }
-  .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
+  .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
     background: #78e08f;
     width: 100px;
     color: white;
@@ -213,11 +217,11 @@ header {
     letter-spacing: 1.5px;
     font-family: Arial;
     cursor: pointer; }
-    .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo:hover {
+    .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo:hover {
       background-color: #57A167;
       color: white; }
     @media screen and (max-width: 600px) and (min-width: 320px) {
-      .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
+      .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
         width: 90%; } }
 
 .footer .seccionVerde {
@@ -248,22 +252,31 @@ header {
     .footer .seccionVerde .divEnLinea h4 {
       text-align: center;
       font-family: "Open Sans", sans-serif;
-      margin: 20px 0 10px 0;
+      margin: 10px auto;
       padding: 0;
       font-size: 14px;
       font-weight: 600;
       letter-spacing: 0px; }
-    .footer .seccionVerde .divEnLinea h5 {
+    .footer .seccionVerde .divEnLinea div i {
+      font-size: 18px; }
+    .footer .seccionVerde .divEnLinea div h5 {
       text-align: center;
       font-family: "PT Serif", serif;
-      margin: 20px 0 10px 0;
+      margin: 10px auto;
       padding: 0;
       font-size: 15px;
       font-weight: 200;
       letter-spacing: 0px; }
-    .footer .seccionVerde .divEnLinea i {
-      color: white;
-      margin-bottom: 10px; }
+    .footer .seccionVerde .divEnLinea .redes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .footer .seccionVerde .divEnLinea .redes a {
+        padding: 5px; }
+        .footer .seccionVerde .divEnLinea .redes a i {
+          color: white;
+          width: 20px; }
   .footer .seccionVerde .cajaWhatsapp {
     width: 40px;
     height: 40px;
@@ -277,7 +290,7 @@ header {
     .footer .seccionVerde .contain h5 {
       text-align: center;
       font-family: "PT Serif", serif;
-      margin: 20px 0 10px 0;
+      margin: 10px auto;
       padding: 0;
       font-size: 15px;
       font-weight: 100;
@@ -301,7 +314,7 @@ header {
 body main section h1 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  margin: 20px 0 10px 0;
+  margin: 10px auto;
   padding: 0;
   font-size: 30px;
   font-weight: 200;
@@ -326,7 +339,7 @@ body main .valores .row .div-valores {
   body main .valores .row .div-valores h2 {
     text-align: center;
     font-family: "Open Sans", sans-serif;
-    margin: 20px 0 10px 0;
+    margin: 10px auto;
     padding: 0;
     font-size: 20px;
     font-weight: 600;
@@ -358,7 +371,7 @@ body main .valores .row .div-valores {
 body main section h2 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  margin: 20px 0 10px 0;
+  margin: 10px auto;
   padding: 0;
   font-size: 25px;
   font-weight: 900;
@@ -382,7 +395,7 @@ body main .seccionVerde {
     body main .seccionVerde .divEnLinea .anim {
       text-align: center;
       font-family: "Open Sans", sans-serif;
-      margin: 20px 0 10px 0;
+      margin: 10px auto;
       padding: 0;
       font-size: 20px;
       font-weight: 600;
@@ -413,7 +426,7 @@ body main .seccionVerde {
     body main .seccionVerde .divEnLinea h4 {
       text-align: center;
       font-family: "Open Sans", sans-serif;
-      margin: 20px 0 10px 0;
+      margin: 10px auto;
       padding: 0;
       font-size: 18px;
       font-weight: 500;
@@ -475,44 +488,39 @@ body {
   font-family: 'Open Sans', sans-serif;
   background-color: white; }
   body .imagenes .container .row div .carousel .carousel-inner {
-    width: 100%; }
+    width: 100%;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+    border: 1px solid slategray; }
     body .imagenes .container .row div .carousel .carousel-inner .carousel-item {
-      height: 100vh;
-      box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
-      border: 1px solid slategray; }
+      height: 100vh; }
       body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card {
         height: 200px !important; }
         body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top {
           height: 50vh;
-          transition: 1s; }
+          transition: 1s;
+          object-fit: fill; }
           body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top:hover {
-            transform: scale(1.2); }
-        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body h5 {
-          font-family: 'Open Sans', sans-serif;
-          font-weight: bold;
-          text-align: center; }
-        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body p {
-          padding: 1rem 1.2rem;
-          margin: 0 auto;
-          line-height: 1.8rem;
-          font-family: "PT Serif", serif;
-          font-size: 1.1rem;
-          font-text-align: center; }
-  body .imagenes .container .row div .carousel .controls-top {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: space-between; }
-    body .imagenes .container .row div .carousel .controls-top a {
-      align-self: center; }
-      body .imagenes .container .row div .carousel .controls-top a i {
-        width: 30px;
-        height: 30px;
-        cursor: pointer;
-        color: #57A167;
-        opacity: 40%;
-        border-radius: 10%;
-        position: absolute;
-        bottom: 60px;
-        display: block; }
+            transform: scale(1.1); }
+        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body {
+          height: 20vh; }
+          body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body h5 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            text-align: center; }
+          body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body p {
+            padding: 1rem 1.2rem;
+            margin: 0 auto;
+            line-height: 1.8rem;
+            font-family: "PT Serif", serif;
+            font-size: 1.1rem;
+            font-text-align: center; }
+  body .imagenes .container .row div .carousel .carousel-control-prev .carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    color: #57A167;
+    opacity: 40%;
+    border-radius: 10%;
+    position: absolute;
+    bottom: 60px;
+    display: block; }

@@ -29,16 +29,20 @@
     <!--Font Awesome Iconos-->
     <link rel="stylesheet" href="./CSS/font-awesome.min.css">
 
+    <!-- Link iconos -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
     <link rel="stylesheet" href="CSS/estilos.css">
 </head>
-<body>
+<body id="top">
     <header class="sticky-top">
         <div class="container-fluid">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a href="index.html" class="navbar-brand">
                     <img class="logo img-fluid d-inline-block align-top" src="./imagenes/ICONO/icono-decoronce2.png" alt="Decoronce">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="menuNavegacion">
@@ -50,7 +54,7 @@
                             <a class="nav-link" href="nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" 
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" 
                             aria-haspopup="true" aria-expanded="false" href="productos.html">Productos
                             </a>
                             <ul class="oculto dropdown-menu">
@@ -58,9 +62,6 @@
                                 <li><a href="productos.html" class="nav-link dropdown-item">Cortinería</a></li>
                                 <li><a href="productos.html" class="nav-link dropdown-item">Mantelería</a></li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="novedades.html">Novedades</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Contacto</a>
@@ -76,7 +77,7 @@
             </nav>
         </div>
     </header>
-    <main class="imagenes" id="top" >
+    <main class="imagenes">
         <section>
             <h1>Productos</h1>
         </section>
@@ -89,7 +90,7 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <div class="card mb-2">
-                                    <img src="./imagenes/PRODUCTOS/linen-portada.PNG" class="card-img-top d-block w-100" alt="linen portada">
+                                    <img src="./imagenes/PRODUCTOS/linen-portada1.JPG" class="card-img-top d-block w-100" alt="linen portada">
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Linen de tapicería 1.40 de ancho</h5>
                                         <p class="card-text">Lino de    tapicería.
@@ -531,7 +532,7 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <div class="card mb-2">
-                                    <img src="./imagenes/PRODUCTOS/tusor-rayado-portada.JPG" class="card-img-top d-block w-100" alt="tusor rayado">
+                                    <img src="./imagenes/PRODUCTOS/portada-tusor-rayado.jpeg" class="card-img-top d-block w-100" alt="tusor rayado">
                                     <div class="card-body text-center ">
                                         <h5 class="card-title">Tusor Rayado 2.80 de ancho </h5>
                                         <p class="card-text">Tela rustica, gruesa y resistente. El Tusor viene prelavado para asegurar comportamiento uniforme en los posteriores lavados.
@@ -621,9 +622,9 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <div class="card mb-2">
-                                    <img src="./imagenes/PRODUCTOS/gasa-arugada-portada.JPG" class="card-img-top d-block" alt="gasa arrugada">
+                                    <img src="./imagenes/PRODUCTOS/portada-gasa-arrugada.jpeg" class="card-img-top d-block w-100" alt="gasa arrugada">
                                     <div class="card-body text-center ">
-                                        <h5 class="card-title">Gasa Arrugada 2.50 de ancho</h5>
+                                        <h5 class="card-title">Gasa Tusor 2.50 de ancho</h5>
                                         <p class="card-text">Género traslucido con las clásicas arruguitas del tusor. Tambien llamada Gasa Pañalera.
                                         </p>
                                         <a class="btn btn-success mt-1" href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank">Consultar precio</a>
@@ -643,7 +644,7 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="card mb-2">
-                                    <img src="./imagenes/PRODUCTOS/gasa-arrugada-blanca.JPG" class="card-img-top d-block w-100" alt="gasa arrugada">
+                                    <img src="./imagenes/PRODUCTOS/gasa-arrugada-blanca.jpg" class="card-img-top d-block w-100" alt="gasa arrugada">
                                     <div class="card-body text-center ">
                                         <h5 class="card-title">Blanco</h5>
                                         <p class="card-text">Género traslucido con las clásicas arruguitas del tusor. Tambien llamada Gasa Pañalera.
@@ -682,7 +683,7 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <div class="card mb-2">
-                                    <img src="./imagenes/PRODUCTOS/crudo-portada.PNG" class="card-img-top d-block w-100" alt="jacquard crudo">
+                                    <img src="./imagenes/PRODUCTOS/jacquard-crudo-portada.JPG" class="card-img-top d-block w-100" alt="jacquard crudo">
                                     <div class="card-body text-center ">
                                         <h5 class="card-title">Jacquard Crudo 3.00 mts de ancho</h5>
                                         <p class="card-text">Jacquard rústico pesado ideal para cortinería, cubrecamas, almohadones y fundas. Distintas tramas en color crudo.
@@ -827,7 +828,7 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <div class="card mb-2">
-                                    <img src="imagenes/PORTADA/Gabardina-estampada.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <img src="imagenes/PORTADA/Gabardina-estampada.PNG" class="card-img-top d-block w-100" alt="gabardina estampada">
                                     <div class="card-body text-center ">
                                         <h5 class="card-title">Gabardina Estampada 1.60 de ancho</h5>
                                         <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
@@ -838,7 +839,7 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="card mb-2">
-                                    <img src="imagenes/PRODUCTOS/gabardina-plumas-azul.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <img src="imagenes/PRODUCTOS/gabardina-plumas-azul.PNG" class="card-img-top d-block w-100" alt="gabardina estampada">
                                     <div class="card-body text-center ">
                                         <h5 class="card-title">Plumas azul</h5>
                                         <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
@@ -849,7 +850,7 @@
                             </div>
                             <div class="carousel-item ">
                                 <div class="card mb-2">
-                                    <img src="imagenes/PRODUCTOS/chevron-gris.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <img src="imagenes/PRODUCTOS/chevron-gris.PNG" class="card-img-top d-block w-100" alt="gabardina estampada">
                                     <div class="card-body text-center ">
                                         <h5 class="card-title">Chevron gris</h5>
                                         <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
@@ -860,7 +861,7 @@
                             </div>
                             <div class="carousel-item ">
                                 <div class="card mb-2">
-                                    <img src="imagenes/PRODUCTOS/gabardina-loros.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <img src="imagenes/PRODUCTOS/gabardina-loros.PNG" class="card-img-top d-block w-100" alt="gabardina estampada">
                                     <div class="card-body text-center ">
                                         <h5 class="card-title">Loros</h5>
                                         <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
@@ -871,7 +872,7 @@
                             </div>
                             <div class="carousel-item ">
                                 <div class="card mb-2">
-                                    <img src="imagenes/PRODUCTOS/gabardina-plumas-rosa.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <img src="imagenes/PRODUCTOS/gabardina-plumas-rosa.PNG" class="card-img-top d-block w-100" alt="gabardina estampada">
                                     <div class="card-body text-center ">
                                         <h5 class="card-title">Plumas Rosa</h5>
                                         <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
@@ -882,7 +883,7 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="card mb-2">
-                                    <img src="imagenes/PRODUCTOS/chevron-negro.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <img src="imagenes/PRODUCTOS/chevron-negro.PNG" class="card-img-top d-block w-100" alt="gabardina estampada">
                                     <div class="card-body text-center ">
                                         <h5 class="card-title">Chevron negro</h5>
                                         <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
@@ -893,7 +894,7 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="card mb-2">
-                                    <img src="imagenes/PRODUCTOS/hojas-tropicales.PNG" class="card-img-top d-block" alt="gabardina estampada">
+                                    <img src="imagenes/PRODUCTOS/hojas-tropicales.PNG" class="card-img-top d-block w-100" alt="gabardina estampada">
                                     <div class="card-body text-center ">
                                         <h5 class="card-title">Hojas tropicales</h5>
                                         <p class="card-text">La gabardina es un tela lisa al tacto, opaca, cálida, resistente al uso y original en sus diseños.
@@ -920,7 +921,7 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">
                                 <div class="card mb-2">
-                                    <img src="imagenes/PRODUCTOS/nido-de-abeja-gris.PNG" class="card-img-top d-block" alt="nido de abeja">
+                                    <img src="imagenes/PRODUCTOS/nido-de-abeja-gris.PNG" class="card-img-top d-block w-100" alt="nido de abeja">
                                     <div class="card-body text-center ">
                                         <h5 class="card-title">Nido de abeja gris</h5>
                                         <p class="card-text">Tela con textura, de tejido plano, sin brillo, semigruesa, cálida, cómoda, fácil lavado, resistente al uso y original.
@@ -931,7 +932,7 @@
                             </div>
                             <div class="carousel-item">
                                 <div class="card mb-2">
-                                    <img src="imagenes/PRODUCTOS/nido-de-abeja-rosa.PNG" class="card-img-top d-block" alt="nido de abeja">
+                                    <img src="imagenes/PRODUCTOS/nido-de-abeja-rosa.PNG" class="card-img-top d-block w-100" alt="nido de abeja">
                                     <div class="card-body text-center ">
                                         <h5 class="card-title">Nido de abeja rosa</h5>
                                         <p class="card-text">Tela con textura, de tejido plano, sin brillo, semigruesa, cálida, cómoda, fácil lavado, resistente al uso y original.
@@ -966,19 +967,37 @@
             </div>
             <div class="divEnLinea col-lg-4">   
                 <h4>CONTACTANOS</h4>
-                <h5>Dirección:Azcuénaga 419, C1029,CABA</h5>
-                <h5>Teléfono: 011 4952-8742</h5>
-                <h5>Whatsapp: 011 2451-7095</h5>
-                <h5>Email:decoronce419@gmail.com</h5>
+                <div class="d-flex align-items-center mx-auto p-1">
+                    <i class="material-icons">
+                    place
+                    </i>
+                    <h5 class="p-1">Azcuénaga 419, C1029,CABA</h5>
+                </div>
+                <div class="d-flex align-items-center mx-auto p-1">
+                    <i class="material-icons">phone
+                    </i>
+                    <h5 class="p-1">011 4952-8742</h5>
+                </div>    
+                <div class="d-flex align-items-center  mx-auto p-1" >
+                    <i class="material-icons">whatsapp
+                    </i>
+                    <h5 class="p-1">011 2451-7095</h5>
+                </div>
+                <div class="d-flex align-items-center mx-auto p-1">
+                    <i class="material-icons">mail_outline</i>
+                    <h5 class="p-1">decoronce419@gmail.com</h5>   
+                </div>
             </div>
             <div class="divEnLinea col-lg-4">
                 <h4>NUESTRAS REDES</h4>
-                <a href="https://www.facebook.com/decoronce419" target="_blank">          
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                </a>
-                <a href="https://www.instagram.com/decoronce419/?hl=es-la" target="_blank">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                </a>  
+                <div class="redes">
+                    <a href="https://www.facebook.com/decoronce419" target="_blank">          
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.instagram.com/decoronce419/?hl=es-la" target="_blank">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </div> 
             </div>
             <div class="cajaWhatsapp">
                 <a href="https://api.whatsapp.com/send?phone=5491124517095&text=Hola%2C%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20los%20productos" target="_blank"><img src="./imagenes/ICONO/3721678-whatsapp_108065 (1).png" alt="whatsapp"></a>

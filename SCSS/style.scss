@@ -27,20 +27,22 @@ body{
                     .carousel{
                         .carousel-inner{
                             width: 100%;
+                            box-shadow:0px 0px 30px rgba(127, 137, 161, 0.3) ;
+                            border: 1px solid slategray;
                             .carousel-item{
                                     height: 100vh;
-                                    box-shadow:0px 0px 30px rgba(127, 137, 161, 0.3) ;
-                                    border: 1px solid slategray;
                                     .card{
                                         height: 200px !important;
                                         .card-img-top{
                                                 height: 50vh; 
                                                 transition: 1s;
                                                 &:hover{
-                                                transform: scale(1.2);
+                                                transform: scale(1.1);
                                                 }
+                                                object-fit:fill;
                                         }
                                         .card-body{
+                                            height: 20vh;
                                             h5{
                                                 font: {
                                                 family:'Open Sans', sans-serif;
@@ -74,26 +76,20 @@ body{
 
 
                         }
-                        .controls-top{
-                            display: flex;
-                            flex-direction: row;
-                            flex-wrap: nowrap;
-                            align-items: center;
-                            justify-content:space-between;
-                            a{
-                                align-self: center;
-                                i{
-                                    width: 30px;
-                                    height: 30px;
-                                    cursor: pointer;
-                                    color: $colorPrincipal;
-                                    opacity: 40%;
-                                    border-radius: 10%;
-                                    position: absolute;
-                                    bottom:60px; 
-                                    display: block;
-                                }
+                        .carousel-control-prev{
+                            .carousel-control-prev-icon{
+                                width: 30px;
+                                height: 30px;
+                                cursor: pointer;
+                                color: $colorPrincipal;
+                                opacity: 40%;
+                                border-radius: 10%;
+                                position: absolute;
+                                bottom:60px; 
+                                display: block;
                             }
+                        }
+                    }
 
 
 
@@ -116,8 +112,6 @@ body{
 
             }
         }
-    } 
-}
 
 
 

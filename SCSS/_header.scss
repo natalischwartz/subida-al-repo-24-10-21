@@ -32,12 +32,12 @@ header{
             }
             .collapse{
                 .menu{
+                    font-family:$fuenteHeadings;
                     .nav-item{
                         .nav-link{
                             color: black;
                             font: {
                                 size:15px;
-                                family:$fuenteHeadings;
                             }
                             &:hover{
                                 transition:all ease .5s;

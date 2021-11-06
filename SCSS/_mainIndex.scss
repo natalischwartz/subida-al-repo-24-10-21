@@ -2,12 +2,17 @@
 @import"variables";
 
 .main{
-    .telas{
-        .portada{
-            width: 100%;;
-            text-align:center;
-            img{
-                width:40%;
+    .carousel-index{
+        .carousel{
+            .carousel-inner{
+                width: 100%;
+                .carousel-item{
+                    img{
+                        object-fit:unset;
+                        height: 50vh;
+                        width: 100%;
+                    }
+                }
             }
         }
     }
@@ -50,25 +55,28 @@
                         left:0;
                         background-color:white;
                         opacity: 0.3;
-                        transition: all 300ms;
+                        transition: all 500ms;
                     }    
                     &:before{
-                        transform:rotate(90deg) translateY(-90px) translateX(0px);
+                        transform:rotate(90deg) translateY(-98px) translateX(0px);
                         
                     }
                     &:after{
-                        transform:rotate(90deg) translateY(108px) translateX(-2px);
+                        transform:rotate(90deg) translateY(98px) translateX(0px);
                         
                     }
                     &:hover::before{
                         transform:rotate(90deg) translateY(-180px) translateX(0px);
+                        
                     }
                     &:hover::after{
-                        transform:rotate(90deg) translateY(200px) translateX(-2px);
+                        transform:rotate(90deg) translateY(180px) translateX(0px);
+                        
                     }
                     &:hover{
                         h4{
                             transform: translate(-50%, -50%) scale(1);
+                            
                         }
                     }    
         
@@ -79,22 +87,23 @@
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%) scale(0);
-                        color:black;
+                        color:$colorPrincipal;
+                        text-transform: uppercase;
                         font-weight:bold;
                         font-family: $fuenteHeadings;
+                        text-shadow:10px 10px 30px 10px black;
                         font-size: 20px;
-                        padding: 20px;
                         z-index:2;
-                        transition: all 300ms;
+                        transition: all 500ms;
                     }
                     img{
                     width:195px;
                     height:197px;
-                    border-radius: 1.2rem;
+                    border-radius:1.2rem;
                     object-fit: cover;
                     @media screen and (min-width:550px) and (max-width:760px){
-                    width: 15rem;
-                    height: 15rem;
+                    width: 12.5rem;
+                    height: 12.5rem;
                     }
                     }
 
@@ -130,8 +139,10 @@
                 .carousel-item{
                     img{
                         height: 20vh;
-                        @media screen and (min-width:460px) and (max-width:765px){
-                            min-width: 50px;
+                        @media screen and (min-width:375px) and (max-width:765px){
+                        width: 5rem;
+                        height: 5rem;
+                        }
 
                         }
                         
@@ -195,5 +206,5 @@
             }
         }
     }
-}
+
 
