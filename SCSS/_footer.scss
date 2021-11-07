@@ -11,18 +11,30 @@
                 margin: 5px auto; 
             }
             p{
-                @include parrafo(14px)
+                @include parrafo(14px);
+                @media screen and (min-width:320px) and (max-width:767px){
+                @include parrafo (16px);
+                }
             }
             h4{
                 @include headings(0px,$fuenteHeadings,14px,600);
+                @media screen and (min-width:320px) and (max-width:767px){
+                @include headings (0px,$fuenteHeadings,16px,600);
+                }
             }
 
             div{
                 i{
                     font-size: 18px;
+                    @media screen and (min-width:320px) and (max-width:767px){
+                        font-size: 19px;
+                    }
                 }
                 h5{
                     @include headings(0px,$fuenteParrafo,15px,200);
+                    @media screen and (min-width:320px) and (max-width:767px){
+                    @include headings (0px,$fuenteParrafo,16px,200);
+                    }
                 }
             }
             .social-media{
@@ -71,7 +83,7 @@
             height: 40px;
             position: fixed;
             bottom: 90px;
-            right: 33px;
+            right: 30px;
             a{
                 img{
                     width: 40px;;
@@ -83,28 +95,47 @@
             text-align: center;
             h5{
                 @include headings(0px,$fuenteParrafo,15px,100);
+                @media screen and (min-width:320px) and (max-width:767px){
+                @include headings (0px,$fuenteParrafo,16px,100);    
+                }
             }
     
         }
-        div{
-            .backToTop{
-                background-color:$colorSecundario;
-                color: white;
-                width: 44px;
-                height: 44px;
-                text-align: center;
-                font-size: 16px;
-                line-height: 1;
-                border-radius: 50%;
-                position: fixed;
-                right: 15px;
-                bottom: 15px;
-                i{
-                    padding-top: 12px;
-                    color: #fff;  
-                }
+        .scrollup{
+            background: $colorSecundario;
+            color: white;
+            width: 40px;
+            height: 40px;
+            font-size: 25px;
+            border-radius: 50%;
+            position: fixed;
+            right: 15px;
+            bottom: -20%;
+            z-index: 11;
+            transition:.5s;
+            &:hover{
+                opacity: 0.7;
             }
-        }
+        }  
+            .scrollup__icon{
+            color: #fff;
+            
+            
+        }   .show-scroll{
+            bottom: 2rem;
+        }   
+
+
     }
+
+        
+        
+
+        
+        
+        
+        
+    
+    
 
 

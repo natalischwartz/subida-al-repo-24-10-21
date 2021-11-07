@@ -50,6 +50,22 @@ header {
     object-fit: unset;
     height: 50vh;
     width: 100%; }
+  .main .carousel-index .carousel .carousel-inner .carousel-item div h5 {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin: 10px auto;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0px; }
+  .main .carousel-index .carousel .carousel-inner .carousel-item p {
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    margin: 10px auto;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 0px; }
 
 .main .servicios .container-fluid .seccionVerde {
   height: 100%;
@@ -159,14 +175,15 @@ header {
       background: #ccc;
       border: 1px solid #ccc;
       margin-bottom: 10px; }
-  .main .marcas .carousel .carousel-inner .carousel-item img {
+  .main .marcas .carousel .carousel-inner .carousel-item div img {
+    width: 100%;
     height: 20vh; }
-    @media screen and (min-width: 375px) and (max-width: 765px) {
-      .main .marcas .carousel .carousel-inner .carousel-item img {
-        width: 5rem;
-        height: 5rem; } }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .main .marcas .carousel .carousel-inner .carousel-item div img {
+        width: 40vw;
+        margin: 30px auto; } }
 
-.contactanos h2 {
+.main .contactanos h2 {
   text-align: center;
   font-family: "Open Sans", sans-serif;
   margin: 10px auto;
@@ -175,36 +192,36 @@ header {
   font-weight: 900;
   letter-spacing: 3px; }
 
-.contactanos iframe {
+.main .contactanos iframe {
   width: 100%;
   height: 312px; }
 
-.contactanos .row {
+.main .contactanos .row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start; }
-  .contactanos .row .contacto {
+  .main .contactanos .row .contacto {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap; }
-    .contactanos .row .contacto p {
+    .main .contactanos .row .contacto p {
       font: size 14px;
       color: #888;
       font-weight: 200;
       font-family: "PT Serif", serif;
       margin-left: 5px; }
-    .contactanos .row .contacto i {
+    .main .contactanos .row .contacto i {
       font-size: 25px;
       color: #007bff; }
 
-.contactanos .contact-form .contactForm .form .contact-form__div {
+.main .contactanos .contact-form .contactForm .form .contact-form__div {
   margin: 10px auto; }
-  .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input:focus, .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__textarea:focus {
+  .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input:focus, .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__textarea:focus {
     transition: 0.4s;
     padding: 8px 0px 5px;
     background: lightgrey; }
-  .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
+  .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
     background: #78e08f;
     width: 100px;
     color: white;
@@ -218,11 +235,11 @@ header {
     letter-spacing: 1.5px;
     font-family: Arial;
     cursor: pointer; }
-    .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo:hover {
+    .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo:hover {
       background-color: #57A167;
       color: white; }
     @media screen and (max-width: 600px) and (min-width: 320px) {
-      .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
+      .main .contactanos .contact-form .contactForm .form .contact-form__div .contact-form__input--activo {
         width: 90%; } }
 
 .footer .seccionVerde {
@@ -250,6 +267,14 @@ header {
       font-family: 'PT Serif', serif;
       font-size: 14px;
       text-align: center; }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        .footer .seccionVerde .divEnLinea p {
+          padding: 1rem 1.2rem;
+          margin: 0 auto;
+          line-height: 1.8rem;
+          font-family: 'PT Serif', serif;
+          font-size: 16px;
+          text-align: center; } }
     .footer .seccionVerde .divEnLinea h4 {
       text-align: center;
       font-family: "Open Sans", sans-serif;
@@ -258,8 +283,20 @@ header {
       font-size: 14px;
       font-weight: 600;
       letter-spacing: 0px; }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        .footer .seccionVerde .divEnLinea h4 {
+          text-align: center;
+          font-family: "Open Sans", sans-serif;
+          margin: 10px auto;
+          padding: 0;
+          font-size: 16px;
+          font-weight: 600;
+          letter-spacing: 0px; } }
     .footer .seccionVerde .divEnLinea div i {
       font-size: 18px; }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        .footer .seccionVerde .divEnLinea div i {
+          font-size: 19px; } }
     .footer .seccionVerde .divEnLinea div h5 {
       text-align: center;
       font-family: "PT Serif", serif;
@@ -268,6 +305,15 @@ header {
       font-size: 15px;
       font-weight: 200;
       letter-spacing: 0px; }
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        .footer .seccionVerde .divEnLinea div h5 {
+          text-align: center;
+          font-family: "PT Serif", serif;
+          margin: 10px auto;
+          padding: 0;
+          font-size: 16px;
+          font-weight: 200;
+          letter-spacing: 0px; } }
     @media screen and (min-width: 320px) and (max-width: 828px) {
       .footer .seccionVerde .divEnLinea .social-media {
         display: none; } }
@@ -297,7 +343,7 @@ header {
   height: 40px;
   position: fixed;
   bottom: 90px;
-  right: 33px; }
+  right: 30px; }
   .footer .cajaWhatsapp a img {
     width: 40px; }
 
@@ -311,22 +357,36 @@ header {
     font-size: 15px;
     font-weight: 100;
     letter-spacing: 0px; }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .footer .contain h5 {
+        text-align: center;
+        font-family: "PT Serif", serif;
+        margin: 10px auto;
+        padding: 0;
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 0px; } }
 
-.footer div .backToTop {
-  background-color: #78e08f;
+.footer .scrollup {
+  background: #78e08f;
   color: white;
-  width: 44px;
-  height: 44px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 1;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
   border-radius: 50%;
   position: fixed;
   right: 15px;
-  bottom: 15px; }
-  .footer div .backToTop i {
-    padding-top: 12px;
-    color: #fff; }
+  bottom: -20%;
+  z-index: 11;
+  transition: .5s; }
+  .footer .scrollup:hover {
+    opacity: 0.7; }
+
+.footer .scrollup__icon {
+  color: #fff; }
+
+.footer .show-scroll {
+  bottom: 2rem; }
 
 body main section h1 {
   text-align: center;
@@ -455,7 +515,7 @@ body main .seccionVerde {
 body main section .formulario {
   width: 50%;
   margin-top: 40px; }
-  @media screen and (max-width: 600px) and (min-width: 320px) {
+  @media (max-width: 990px) {
     body main section .formulario {
       width: 100%;
       margin-top: 40px; } }
@@ -507,30 +567,32 @@ body {
   body .imagenes .container .row div .carousel .carousel-inner {
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
     border: 1px solid slategray; }
-    body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card {
-      width: 100%; }
-      body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top {
-        height: 50vh;
-        transition: 1s;
-        object-fit: cover; }
-        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top:hover {
-          transform: scale(1.1); }
-      body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center; }
-        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body h5 {
-          font-family: 'Open Sans', sans-serif;
-          font-weight: bold;
-          text-align: center; }
-        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body p {
-          padding: 1rem 1.2rem;
-          margin: 0 auto;
-          line-height: 1.8rem;
-          font-family: "PT Serif", serif;
-          font-size: 1.1rem;
-          font-text-align: center; }
+    body .imagenes .container .row div .carousel .carousel-inner .carousel-item {
+      height: 40rem; }
+      body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card {
+        width: 100%; }
+        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top {
+          height: 50vh;
+          transition: 1s;
+          object-fit: cover; }
+          body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top:hover {
+            transform: scale(1.1); }
+        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center; }
+          body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body h5 {
+            font-family: 'Open Sans', sans-serif;
+            font-weight: bold;
+            text-align: center; }
+          body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body p {
+            padding: 1rem 1.2rem;
+            margin: 0 auto;
+            line-height: 1.8rem;
+            font-family: "PT Serif", serif;
+            font-size: 1.1rem;
+            font-text-align: center; }
   body .imagenes .container .row div .carousel button span {
     font-size: 40px;
     cursor: pointer;
