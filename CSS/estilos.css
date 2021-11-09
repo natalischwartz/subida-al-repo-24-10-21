@@ -57,7 +57,8 @@ header {
     padding: 0;
     font-size: 20px;
     font-weight: 600;
-    letter-spacing: 0px; }
+    letter-spacing: 0px;
+    text-shadow: 1px 2px 2px black, 0 0 1em #57A167, 0 0 0.2em; }
   .main .carousel-index .carousel .carousel-inner .carousel-item p {
     text-align: center;
     font-family: "Open Sans", sans-serif;
@@ -65,7 +66,8 @@ header {
     padding: 0;
     font-size: 16px;
     font-weight: 200;
-    letter-spacing: 0px; }
+    letter-spacing: 0px;
+    text-shadow: 1px 1px 2px black, 0 0 1em #57A167, 0 0 0.2em; }
 
 .main .servicios .container-fluid .seccionVerde {
   height: 100%;
@@ -180,7 +182,8 @@ header {
     height: 20vh; }
     @media screen and (min-width: 320px) and (max-width: 767px) {
       .main .marcas .carousel .carousel-inner .carousel-item div img {
-        width: 40vw;
+        width: 100%;
+        width: 30vw;
         margin: 30px auto; } }
 
 .main .contactanos h2 {
@@ -372,7 +375,6 @@ header {
   color: white;
   width: 40px;
   height: 40px;
-  font-size: 25px;
   border-radius: 50%;
   position: fixed;
   right: 15px;
@@ -382,8 +384,9 @@ header {
   .footer .scrollup:hover {
     opacity: 0.7; }
 
-.footer .scrollup__icon {
-  color: #fff; }
+.footer .uil-angle-up {
+  color: white;
+  font-size: 25px; }
 
 .footer .show-scroll {
   bottom: 2rem; }
@@ -566,33 +569,35 @@ body {
   background-color: white; }
   body .imagenes .container .row div .carousel .carousel-inner {
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
-    border: 1px solid slategray; }
-    body .imagenes .container .row div .carousel .carousel-inner .carousel-item {
-      height: 40rem; }
-      body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card {
-        width: 100%; }
-        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top {
-          height: 50vh;
-          transition: 1s;
-          object-fit: cover; }
-          body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top:hover {
-            transform: scale(1.1); }
-        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          align-items: center; }
-          body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body h5 {
-            font-family: 'Open Sans', sans-serif;
-            font-weight: bold;
-            text-align: center; }
-          body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body p {
-            padding: 1rem 1.2rem;
-            margin: 0 auto;
-            line-height: 1.8rem;
-            font-family: "PT Serif", serif;
-            font-size: 1.1rem;
-            font-text-align: center; }
+    border: 0.5px solid rgba(141, 141, 141, 0.94);
+    border-radius: 8px;
+    background: #FFFFFF; }
+    body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card {
+      height: 35rem;
+      background: #FFFFFF; }
+      body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top {
+        height: 50vh;
+        transition: 1s;
+        object-fit: cover; }
+        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top:hover {
+          transform: scale(1.1); }
+      body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center; }
+        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body h5 {
+          height: 50px;
+          font-family: "Open Sans", sans-serif;
+          font-weight: bold;
+          font-size: 20px;
+          text-align: center; }
+        body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body p {
+          margin: 0 auto;
+          line-height: 1.8rem;
+          font-family: "PT Serif", serif;
+          font-size: 1.1rem;
+          font-text-align: center; }
   body .imagenes .container .row div .carousel button span {
     font-size: 40px;
     cursor: pointer;
