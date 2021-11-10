@@ -2,7 +2,6 @@ header {
   width: 100%;
   background-color: white;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
-  position: fixed;
   top: 0;
   left: 0;
   animation: smoothScroll 1s forwards; }
@@ -178,13 +177,10 @@ header {
       border: 1px solid #ccc;
       margin-bottom: 10px; }
   .main .marcas .carousel .carousel-inner .carousel-item div img {
-    width: 100%;
-    height: 20vh; }
+    max-width: 100%; }
     @media screen and (min-width: 320px) and (max-width: 767px) {
       .main .marcas .carousel .carousel-inner .carousel-item div img {
-        width: 100%;
-        width: 30vw;
-        margin: 30px auto; } }
+        margin: 10px auto; } }
 
 .main .contactanos h2 {
   text-align: center;
@@ -370,25 +366,24 @@ header {
         font-weight: 100;
         letter-spacing: 0px; } }
 
-.footer .scrollup {
-  background: #78e08f;
-  color: white;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.scrollup {
   position: fixed;
-  right: 15px;
+  right: 1rem;
   bottom: -20%;
-  z-index: 11;
-  transition: .5s; }
-  .footer .scrollup:hover {
-    opacity: 0.7; }
-
-.footer .uil-angle-up {
+  background-color: #78e08f;
   color: white;
-  font-size: 25px; }
+  padding: 0 .3rem;
+  border-radius: .4rem;
+  z-index: 10;
+  transition: .4s; }
+  .scrollup:hover {
+    opacity: 0.7; }
+  .scrollup .scrollup__icon {
+    font-size: 1.5rem;
+    color: #fff; }
 
-.footer .show-scroll {
+/* Show scroll */
+.show-scroll {
   bottom: 2rem; }
 
 body main section h1 {
@@ -573,7 +568,7 @@ body {
     border-radius: 8px;
     background: #FFFFFF; }
     body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card {
-      height: 35rem;
+      height: 40rem;
       background: #FFFFFF; }
       body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-img-top {
         height: 50vh;
@@ -584,10 +579,9 @@ body {
       body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center; }
         body .imagenes .container .row div .carousel .carousel-inner .carousel-item .card .card-body h5 {
-          height: 50px;
           font-family: "Open Sans", sans-serif;
           font-weight: bold;
           font-size: 20px;

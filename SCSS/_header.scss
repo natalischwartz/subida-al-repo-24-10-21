@@ -1,85 +1,81 @@
-header{
-        width: 100%;
-        background-color: white;
-        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
-        position: fixed;
-        top:0;
-        left:0;
-        animation: smoothScroll 1s forwards;
 
-        @keyframes smoothScroll {
-            0% {
-                transform: translateY(-140px);
-            }
-            100%{
-                transform: translateY(0px);
-            }
-            
+header{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.3);
+    top:0;
+    left:0;
+    animation: smoothScroll 1s forwards;
+
+    @keyframes smoothScroll {
+        0% {
+            transform: translateY(-140px);
         }
-    .container-fluid{
-        .navbar{
-            a{
-                .logo{
-                    width:50%;
-                }
+        100%{
+            transform: translateY(0px);
+        }
+        
+    }
+.container-fluid{
+    .navbar{
+        a{
+            .logo{
+                width:50%;
             }
-            .navbar-toggler{
-                border:none;
-                margin-right:10px;
-                .navbar-toggler-icon{
-                    color: black;
-                }
+        }
+        .navbar-toggler{
+            border:none;
+            margin-right:10px;
+            .navbar-toggler-icon{
+                color: black;
             }
-            .collapse{
-                .menu{
-                    font-family:$fuenteHeadings;
-                    .nav-item{
+        }
+        .collapse{
+            .menu{
+                font-family:$fuenteHeadings;
+                .nav-item{
+                    .nav-link{
+                        color: black;
+                        font: {
+                            size:15px;
+                        }
+                        &:hover{
+                            transition:all ease .5s;
+                            color:$colorPrincipal;
+                            
+                        }
+                    }
+                }
+                .dropdown-menu{
+                    transition: all 1s;
+                    border: none;
+                    li{
+                        text-align:left;
                         .nav-link{
                             color: black;
-                            font: {
-                                size:15px;
-                            }
+                            font-size: 14px;
                             &:hover{
-                                transition:all ease .5s;
-                                color:$colorPrincipal;
-                                
+                                background-color: white;
                             }
+                            
                         }
                     }
-                    .dropdown-menu{
-                        transition: all 1s;
-                        border: none;
-                        li{
-                            text-align:left;
-                            .nav-link{
-                                color: black;
-                                font-size: 14px;
-                                &:hover{
-                                    background-color: white;
-                                }
-                                
-                            }
-                        }
 
-                    }
                 }
             }
-                    li{ 
-                        a{
-                            i{
-                                color:black;
-                                font-size: 20px;
-                                justify-content: center;
-                                &:hover{
-                                color:$colorPrincipal;
-                                }
+        }
+                li{ 
+                    a{
+                        i{
+                            color:black;
+                            font-size: 20px;
+                            justify-content: center;
+                            &:hover{
+                            color:$colorPrincipal;
                             }
                         }
                     }
-        }
+                }
     }
 }
-
-
-
-                    
+}
