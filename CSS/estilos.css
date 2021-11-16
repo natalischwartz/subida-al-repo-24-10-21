@@ -50,7 +50,7 @@ header {
     height: 350px; }
     @media screen and (min-width: 320px) and (max-width: 767px) {
       .main .carousel-index .carousel .carousel-inner .carousel-item img {
-        height: 50vh; } }
+        height: 18rem; } }
   .main .carousel-index .carousel .carousel-inner .carousel-item div h5 {
     text-align: center;
     font-family: "Open Sans", sans-serif;
@@ -182,11 +182,17 @@ header {
       border: 1px solid #ccc;
       margin-bottom: 10px; }
   .main .marcas .carousel .carousel-inner .carousel-item div img {
-    max-width: 100%; }
+    max-width: 100%;
+    width: 60%; }
     @media screen and (min-width: 320px) and (max-width: 767px) {
       .main .marcas .carousel .carousel-inner .carousel-item div img {
         margin: 8px auto;
-        width: 30%; } }
+        width: 20%; } }
+  .main .marcas .carousel .carousel-inner .carousel-item div .atlantida {
+    width: 40%; }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .main .marcas .carousel .carousel-inner .carousel-item div .atlantida {
+        width: 20%; } }
 
 .main .contactanos h2 {
   text-align: center;

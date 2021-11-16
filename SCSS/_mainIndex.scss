@@ -11,7 +11,7 @@
                         width: 1001px;
                         height:350px;
                         @media screen and (min-width:320px) and (max-width:767px){
-                            height:50vh;
+                        height:18rem;
                         }
                     }
                     div{
@@ -155,9 +155,16 @@
                         div{
                             img{
                                 max-width: 100%;
+                                width:60%;
                                 @media screen and (min-width:320px) and (max-width:767px){
                                 margin:8px auto;
-                                width: 30%;
+                                width: 20%;
+                                }
+                            }
+                            .atlantida{
+                                width: 40%;
+                                @media screen and (min-width:320px) and (max-width:767px){
+                                    width: 20%;
                                 }
                             }
 
