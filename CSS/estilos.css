@@ -46,9 +46,11 @@ header {
 .main .carousel-index .carousel .carousel-inner {
   width: 100%; }
   .main .carousel-index .carousel .carousel-inner .carousel-item img {
-    object-fit: unset;
-    height: 50vh;
-    width: 100%; }
+    width: 1001px;
+    height: 350px; }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .main .carousel-index .carousel .carousel-inner .carousel-item img {
+        height: 50vh; } }
   .main .carousel-index .carousel .carousel-inner .carousel-item div h5 {
     text-align: center;
     font-family: "Open Sans", sans-serif;
@@ -57,7 +59,10 @@ header {
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 0px;
-    text-shadow: 1px 2px 2px black, 0 0 1em #57A167, 0 0 0.2em; }
+    text-shadow: 1px 3px 3px black, 0 0 1em #57A167, 0 0 0.2em; }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      .main .carousel-index .carousel .carousel-inner .carousel-item div h5 {
+        margin: -5px auto; } }
   .main .carousel-index .carousel .carousel-inner .carousel-item p {
     text-align: center;
     font-family: "Open Sans", sans-serif;
@@ -368,7 +373,7 @@ header {
 
 .scrollup {
   position: fixed;
-  right: 1rem;
+  right: 1.3rem;
   bottom: -20%;
   background-color: #78e08f;
   color: white;
@@ -426,22 +431,6 @@ body main .valores .row .div-valores {
     font-family: 'PT Serif', serif;
     font-size: 18px;
     text-align: center; }
-
-.container .row div img {
-  width: 20vw; }
-
-.container .row div .caja2 {
-  background-color: #131212;
-  color: white; }
-  .container .row div .caja2 h3 {
-    margin: 30px auto;
-    padding: 20px; }
-  .container .row div .caja2 a {
-    font-family: 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    color: white; }
 
 body main section h2 {
   text-align: center;

@@ -8,14 +8,19 @@
                 width: 100%;
                 .carousel-item{
                     img{
-                        object-fit:unset;
-                        height: 50vh;
-                        width: 100%;
+                        width: 1001px;
+                        height:350px;
+                        @media screen and (min-width:320px) and (max-width:767px){
+                            height:50vh;
+                        }
                     }
                     div{
                         h5{
                             @include headings(0px,$fuenteHeadings,20px,600);
-                            text-shadow:1px 2px 2px black, 0 0 1em $colorPrincipal, 0 0 0.2em;
+                            text-shadow:1px 3px 3px black, 0 0 1em $colorPrincipal, 0 0 0.2em;
+                            @media screen and (min-width:320px) and (max-width:767px){
+                                margin:-5px auto;
+                            }
                         }
                     }   p{
                             @include headings(0px,$fuenteHeadings,16px,200);
